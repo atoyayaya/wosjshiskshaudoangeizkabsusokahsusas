@@ -1,0 +1,2114 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/wangzhan/main/xiba')))()
+
+local Window = OrionLib:MakeWindow({Name = "ato脚本中心", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local ato={
+    autohj=false,
+    automj=false,
+    fastbb=false,
+    autochi=false,
+    autobr=false,
+    autobsk=false
+}
+
+local Workout_Mul = 1
+
+_G.gymb = true
+
+function gymb()
+	while _G.gymb == true do
+	wait()
+game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.PodiumService.RF.Teleport:InvokeServer()
+
+	end
+end
+
+_G.gymdj = true
+
+function gymdj()
+	while _G.gymdj == true do
+	wait()
+game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.PodiumService.RE.Event:FireServer()
+
+	end
+end
+
+_G.dj = true
+
+function dj()
+	while _G.dj == true do
+	wait()
+workspace.Script.Events.AddClick:FireServer()
+
+	end
+end
+
+_G.tycs = true
+
+function tycs()
+	while _G.tycs == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.RequestRebirth:InvokeServer()
+
+	end
+end
+
+_G.chi = true
+
+function chi()
+	while _G.chi == true do
+	wait()
+for i,v in pairs(game.Workspace.spawnedCoins.Valley:GetChildren()) do
+if v.Name == "Blue Chi Crate" then 
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
+wait(.16)
+end
+end
+	end
+end
+
+_G.chiq3 = true
+
+function chiq3()
+	while _G.chiq3 == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.TimedRewards.LargeReward
+}
+
+game:GetService("ReplicatedStorage").Events.RewardEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chiq2 = true
+
+function chiq2()
+	while _G.chiq2 == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.TimedRewards.MediumReward
+}
+
+game:GetService("ReplicatedStorage").Events.RewardEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chiq1 = true
+
+function chiq1()
+	while _G.chiq1 == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.TimedRewards.SmallReward
+}
+
+game:GetService("ReplicatedStorage").Events.RewardEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chisu = true
+
+function chisu()
+	while _G.chisu == true do
+	wait()
+local args = {
+    [1] = "EatSpeed"
+}
+
+game:GetService("ReplicatedStorage").Events.PurchaseEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chixd = true
+
+function chixd()
+	while _G.chixd == true do
+	wait()
+local args = {
+    [1] = "Multiplier"
+}
+
+game:GetService("ReplicatedStorage").Events.PurchaseEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chiys = true
+
+function chiys()
+	while _G.chiys == true do
+	wait()
+local args = {
+    [1] = "Speed"
+}
+
+game:GetService("ReplicatedStorage").Events.PurchaseEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chida = true
+
+function chida()
+	while _G.chida == true do
+	wait()
+local args = {
+    [1] = "MaxSize"
+}
+
+game:GetService("ReplicatedStorage").Events.PurchaseEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.chidiu = true
+
+function chidiu()
+	while _G.chidiu == true do
+	wait()
+game:GetService("Players").LocalPlayer.Character.Events.Throw:FireServer()
+
+	end
+end
+
+_G.chise = true
+
+function chise()
+	while _G.chise == true do
+	wait()
+game:GetService("Players").LocalPlayer.Character.Events.Sell:FireServer()
+	end
+end
+
+_G.anzscs = true
+
+function anzscs()
+	while _G.anzscs == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.getDiamondRebEvent:FireServer()
+	end
+end
+
+_G.anhjcs = true
+
+function anhjcs()
+	while _G.anhjcs == true do
+	wait()
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage").Events.getGoldenRebEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.ty = true
+
+function ty()
+	while _G.ty == true do
+	wait(0.1)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character
+}
+
+game:GetService("ReplicatedStorage").Events.RequestJump:FireServer(unpack(args))
+
+	end
+end
+
+_G.ancs = true
+
+function ancs()
+	while _G.ancs == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.RebirthEvent:FireServer()
+
+	end
+end
+
+_G.autocc = true
+
+function autocc()
+	while _G.autocc == true do
+	wait()
+local args = {
+    [1] = "CritRateLevel",
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.UpgradeStatEvent:FireServer(unpack(args))
+	end
+end
+
+_G.autocd = true
+
+function autocd()
+	while _G.autocd == true do
+	wait()
+local args = {
+    [1] = "CritDmgLevel",
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.UpgradeStatEvent:FireServer(unpack(args))
+	end
+end
+
+_G.autosm = true
+
+function autosm()
+	while _G.autosm == true do
+	wait()
+local args = {
+    [1] = "HpLevel",
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.UpgradeStatEvent:FireServer(unpack(args))
+	end
+end
+
+_G.autosh = true
+
+function autosh()
+	while _G.autosh == true do
+	wait()
+local args = {
+    [1] = "DmgLevel",
+    [2] = 0
+}
+
+game:GetService("ReplicatedStorage").Events.UpgradeStatEvent:FireServer(unpack(args))
+
+	end
+end
+
+_G.autoatt = true
+
+function autoatt()
+	while _G.autoatt == true do
+	wait(0.5)
+game:GetService("ReplicatedStorage").Events.AttackEvent:FireServer()
+	end
+end
+
+_G.automz = true
+
+function automz()
+	while _G.automz == true do
+	wait()
+game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.PoseService.RF.Buy:InvokeServer()
+	end
+end
+
+_G.autokz = true
+
+function autokz()
+	while _G.autokz == true do
+	wait()
+game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.PoseService.RF.Spin:InvokeServer()
+	end
+end
+
+_G.autokg = true
+
+function autokg()
+	while _G.autokg == true do
+	wait()
+			game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.AuraService.RF.Spin:InvokeServer()
+	end
+end
+
+_G.automg = true
+
+function automg()
+	while _G.automg == true do
+	wait()
+			game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.AuraService.RF.Buy:InvokeServer()
+	end
+end
+
+_G.automs = true
+
+function automs()
+	while _G.automs == true do
+	wait()
+			local args = {
+    [1] = false,
+    [2] = "Basic Crate"
+}
+
+game:GetService("ReplicatedStorage").common.packages._Index:FindFirstChild("sleitnick_knit@1.5.1").knit.Services.CrateService.RF.Process:InvokeServer(unpack(args))
+	end
+end
+
+_G.autona = true
+
+function autona()
+	while _G.autona == true do
+	wait()
+			local args = {
+    [1] = false,
+    [2] = false
+}
+
+game:GetService("Players").LocalPlayer.Character.Events.Grab:FireServer(unpack(args))
+	end
+end
+
+_G.autoci = true
+
+function autoci()
+	while _G.autoci == true do
+	wait()
+			game:GetService("Players").LocalPlayer.Character.Events.Eat:FireServer()
+	end
+end
+
+_G.st = true
+ 
+function st()
+    while _G.st == true do
+    wait()
+			local args = {
+			[1] = "Purchase",
+			[2] = "Ascension",
+		}
+		
+				
+				game:GetService("ReplicatedStorage").Network.Port1:FireServer(unpack(args))
+    end
+end 
+
+_G.cs = true
+ 
+function cs()
+    while _G.cs == true do
+    wait()
+  game:GetService"ReplicatedStorage".Network.Port1:FireServer("Purchase","Rank")
+    end
+end 
+
+_G.seli = true
+ 
+function seli()
+    while _G.seli == true do
+    wait()
+	game.ReplicatedStorage.Network.Port1:FireServer("SellEnergy")
+    end
+end 
+
+_G.autobywe = true
+ 
+function autobywe()
+    while _G.autobywe == true do
+    wait()
+	game.ReplicatedStorage.Network.Port1:FireServer("PurchaseAll","Strength")
+    end
+end 
+
+_G.autobyli = true
+ 
+function autobyli()
+    while _G.autobyli == true do
+    wait()
+    game.ReplicatedStorage.Network.Port1:FireServer("Purchase","Endurance")
+    end
+end 
+
+_G.autoli = true
+ 
+function autoli()
+    while _G.autoli == true do
+    wait()
+    game.ReplicatedStorage.Network.Port1:FireServer("Click")
+    end
+end 
+
+_G.autoxue = true
+ 
+function autoxue()
+    while _G.autoxue == true do
+    wait()
+    game.ReplicatedStorage.Network.Port1:FireServer("Vitality")
+    end
+end 
+
+_G.autospeed = true
+ 
+function autospeed()
+    while _G.autospeed == true do
+    wait()
+    game.ReplicatedStorage.Network.Port1:FireServer("Running")
+    end
+end 
+
+_G.autodam = true
+ 
+function autodam()
+    while _G.autodam == true do
+    wait()
+    game.ReplicatedStorage.Network.Port1:FireServer("Punching",game.Workspace.PowerTrainingFolder.Model)
+    end
+end 
+
+_G.autolift = true
+ 
+function autolift()
+    while _G.autolift == true do
+    wait(0.00002)
+    local table_1 = {
+    [1] = 'GainMuscle'
+    };
+local Target = game:GetService("ReplicatedStorage").RemoteEvent;
+Target:FireServer(table_1);
+    end
+end 
+
+_G.autosell = true
+ 
+function autosell()
+    while _G.autosell == true do
+    wait()
+local table_1 = {
+[1] = 'SellMuscle'
+};
+local Target = game:GetService("ReplicatedStorage").RemoteEvent;
+Target:FireServer(table_1);
+    end
+end 
+
+_G.autokill = true
+
+function autokill()
+	while _G.autokill == true do
+			for i, player in ipairs(game.Players:GetChildren()) do
+			if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+			player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+			end
+			end
+wait(0.1)
+
+	end
+end
+
+_G.autola = true
+
+function autola()
+	while _G.autola == true do
+		 _G.autola = true
+
+		 local Plr = game:GetService("Players").LocalPlayer
+ local Char = Plr.Character
+ local RootPart = Char.HumanoidRootPart
+ local LowerTorso = Char.LowerTorso
+ 
+ local Loader = game:GetService("Workspace").BadgeColliders.FarmBadge
+ local Space_Item = game:GetService("Workspace").Areas["Area25_RobotFactory"].DraggableItems:FindFirstChildOfClass("MeshPart")
+ 
+ if Space_Item == nil then
+     -- We need to load part of the map in.
+     RootPart.CFrame = CFrame.new(-143, 16, 20042, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+     return true;
+ end
+ 
+ local Space = Space_Item:WaitForChild("InteractionPoint")
+ local Proximity = Space:FindFirstChild("ProximityPrompt")
+ 
+ -- 传送和拉东西
+ RootPart.CFrame = Space.CFrame
+ wait(0.1)
+ Proximity:InputHoldBegin()
+ Proximity:InputHoldEnd()
+ 
+ -- Teleport us to the finish (I have some nasty hard coded stuff in here.)
+ repeat
+  for i,v in pairs(game:GetService("Workspace").PlayerDraggables[game.Players.LocalPlayer.UserId]:GetChildren()) do
+      v.Anchored = true
+      v.CFrame = game:GetService("Workspace").Areas["Area25_RobotFactory"].Goal.CFrame
+      wait()
+      v.Anchored = false
+  end
+  wait()
+until #game:GetService("Workspace").PlayerDraggables[game.Players.LocalPlayer.UserId]:GetChildren() < 1
+	end
+end
+
+_G.autowork = true
+
+function autowork()
+	while _G.autowork == true do
+		game:GetService("ReplicatedStorage")["StrongMan_UpgradeStrength"]:InvokeServer(Workout_Mul)
+	end
+end
+
+_G.auto1e = true
+
+function auto1e()
+	while _G.auto1e == true do
+		game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Red Crystal")
+	end
+end
+
+
+_G.auto2e = true
+
+function auto2e()
+	while _G.auto2e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Purple Crystal")
+	end
+end
+
+_G.auto3e = true
+
+function auto3e()
+	while _G.auto3e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Yellow Crystal")
+	end
+end
+
+_G.auto4e = true
+
+function auto4e()
+	while _G.auto4e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Lightning Crystal")
+	end
+end
+
+_G.auto5e = true
+
+function auto5e()
+	while _G.auto5e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Snow Crystal")
+	end
+end
+
+_G.auto6e = true
+
+function auto6e()
+	while _G.auto6e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Inferno Crystal")
+	end
+end
+
+_G.auto7e = true
+
+function auto7e()
+	while _G.auto7e == true do
+		game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Electro Legends Crystal")	
+	end
+end
+
+_G.auto8e = true
+
+function auto8e()
+	while _G.auto8e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Space Crystal")
+	end
+end
+
+_G.auto9e = true
+
+function auto9e()
+	while _G.auto9e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Alien Crystal")
+	end
+end
+
+_G.auto10e = true
+
+function auto10e()
+	while _G.auto10e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Desert Crystal")
+	end
+end
+
+_G.auto11e = true
+
+function auto11e()
+	while _G.auto11e == true do
+			game:GetService('ReplicatedStorage').rEvents.openCrystalRemote:InvokeServer("openCrystal", "Electro Crystal")
+	end
+end
+
+_G.autose = true
+
+function autose()
+	while _G.autose == true do
+		if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
+wait(.1)
+game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame = game.Workspace.Part.CFrame
+end
+	end
+end
+
+local Tab = Window:MakeTab({
+	Name = "公告",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("脚本永久免费，请勿相信倒卖")
+
+Tab:AddButton({
+	Name = "复制作者QQ号🐧",
+	Callback = function()
+	setclipboard("2134702438")
+  	end    
+})
+
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器")
+
+Tab:AddLabel("有时候部分按钮或勾选框可能按不到，滑动一下即可")
+
+local Tab = Window:MakeTab({
+	Name = "通用功能",
+	Icon = "rbxassetid://5480743826",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "通用功能"
+})
+
+Tab:AddButton({
+	Name = "飞行",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/fly')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "点击传送",
+	Callback = function()
+      		mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "点击传送"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+
+Tab:AddButton({
+	Name = "无限跳跃",
+	Callback = function()
+      		local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+if InfiniteJumpEnabled then
+game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+end
+end)
+  	end    
+})
+
+Tab:AddLabel("速度和跳跃首次设置需设置两次")
+
+Tab:AddTextbox({
+	Name = "自定义移动速度",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "自定义跳跃高度",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end	  
+})
+
+
+Tab:AddButton({
+	Name = "脚本挂机不被踢",
+	Callback = function()
+      		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "重进游戏",
+	Callback = function()
+      		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "销毁ui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "忍者传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动挥剑",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+       ato.autohj=true
+       while wait() do
+       if ato.autohj==true
+       then
+       
+        if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then 
+                game.Players.LocalPlayer.ninjaEvent:FireServer("swingKatana")
+            else
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do 
+                    if v.ClassName == "Tool" and v:FindFirstChild("attackShurikenScript") then 
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+					end
+                        if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then 
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)                            
+                        end
+                end
+            end
+        end
+        
+            
+        end
+       end
+    else
+        ato.autohj=false
+    end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+		_G.autose = Value
+		autose()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动买剑",
+	Default = false,
+	Callback = function(Value)
+	if Value then
+        ato.automj=true
+        while  wait(0.5) do 
+            if ato.automj==true then
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+					local oh1 = "buyAllSwords"
+					local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+					for i = 1,#oh2 do
+						game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+					end
+				end   
+        end
+        
+            
+        end
+    else
+        ato.automj=false
+    end
+    end
+})
+
+Tab:AddToggle({
+	Name = "自动买腰带",
+	Default = false,
+	Callback = function(Value)
+	if Value then
+        ato.fastbb=true
+        while task.wait() do
+            if ato.fastbb==true then
+                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+					local oh1 = "buyAllBelts"
+					local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+					for i = 1,#oh2 do
+						game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+					end
+				end
+            end
+        end
+    else
+     ato.fastbb=false
+    end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动买阶级",
+	Default = false,
+	Callback = function(Value)
+	if Value then
+      ato.autobr=true
+      while wait(0.5) do
+        if ato.autobr==true then
+            
+        
+        if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+            local oh1 = "buyRank"
+            local oh2 = game:GetService("ReplicatedStorage").Ranks.Ground:GetChildren()
+            for i = 1,#oh2 do
+            game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i].Name)
+            end
+        end
+    end
+      end
+    else
+      ato.autobr=false
+    end
+	end    
+})Tab:AddToggle({
+	Name = "自动买技能",
+	Default = false,
+	Callback = function(Value)
+    if Value then
+     ato.autobsk=true
+     while wait(0.5) do
+        
+        if ato.autobsk==true then
+            if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+                local oh1 = "buyAllSkills"
+                local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+                for i = 1,#oh2 do
+                game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+                end
+                end
+                end
+        
+     end
+    else
+        ato.autobsk=false
+    end		
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动吸气",
+	Default = false,
+	Callback = function(Value)
+		_G.chi = Value
+		chi()
+	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "最大跳跃次数",
+	Callback = function()
+      		game.Players.LocalPlayer.multiJumpCount.Value = "50"
+  	end    
+})
+
+Tab:AddButton({
+	Name = "解锁所有岛屿",
+	Callback = function()
+      		for i,v in next, game.workspace.islandUnlockParts:GetChildren() do 
+        if v then 
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.islandSignPart.CFrame -Vector3.new(0,80, 0)
+           wait(0.5)
+        end
+    end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "收集所有宝箱",
+	Callback = function()
+      		loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/ninjashoujiallchest')))()
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "极速传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "自动功能"
+
+})
+
+Tab:AddButton({
+	Name = "自动卡宠",
+	Callback = function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/jisukachong')))()  		
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "下面两个功能都是直接从数据上修改，请不要点太频繁，否则会卡死"
+
+})
+
+Tab:AddButton({
+	Name = "自动获取步数(数据上修改 易卡)",
+	Callback = function()
+    for i=1, 7500 do
+     local A_1 = "collectOrb"
+local A_2 = "Red Orb"
+local A_3 = "City"
+local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
+Event:FireServer(A_1, A_2, A_3)
+end 		
+  	end    
+})
+
+Tab:AddButton({
+	Name = "自动获取宝石(数据上修改 易卡)",
+	Callback = function()
+     for i=1, 1000 do
+     local A_1 = "collectOrb"
+local A_2 = "Gem"
+local A_3 = "City"
+local Event = game:GetService("ReplicatedStorage").rEvents.orbEvent
+Event:FireServer(A_1, A_2, A_3)
+end 		
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动开蛋"
+
+})
+
+Tab:AddToggle({
+	Name = "红色水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto1e = Value
+		auto1e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "紫色水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto2e = Value
+		auto2e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "黄色水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto3e = Value
+		auto3e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "闪电水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto4e = Value
+		auto4e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "白雪水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto5e = Value
+		auto5e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "地狱水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto6e = Value
+		auto6e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "电子传奇水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto7e = Value
+		auto7e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "太空水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto8e = Value
+		auto8e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "外星水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto9e = Value
+		auto9e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "沙漠水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto10e = Value
+		auto10e()
+	end  
+})
+
+Tab:AddToggle({
+	Name = "电子水晶",
+	Default = false,
+	Callback = function(Value)
+	_G.auto11e = Value
+		auto11e()
+	end  
+})
+
+local Section = Tab:AddSection({
+	Name = "传送"
+
+})
+
+Tab:AddButton({
+	Name = "传送到城市",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9682.98828, 74.8522873, 3099.03394, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "传送到白雪城",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9676.13867, 74.8522873, 3782.69385, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "传送到熔岩城",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-11054.9688, 232.791656, 4898.62842, -0.0872479677, 0.000158954252, -0.996186614, -0.00054083002, 0.999999821, 0.00020692969, 0.996186495, 0.000556821818, -0.0872478485)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "传送到传奇公路",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13098.8711, 232.791656, 5907.62793, -0.0872479677, 0.000158954252, -0.996186614, -0.00054083002, 0.999999821, 0.00020692969, 0.996186495, 0.000556821818, -0.0872478485)
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "超级大力士模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "自动拉物品（首次使用需开关几次）"
+
+})
+
+Tab:AddToggle({
+	Name = "自动拉物品（机器人区域）",
+	Default = false,
+	Callback = function(Value)
+		_G.autola = Value
+		autola()
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "锻炼功能"
+
+})
+
+Tab:AddToggle({
+	Name = "自动倍数锻炼(举重的时候使用，先点下面几个才有倍数)",
+	Default = false,
+	Callback = function(Value)
+	_G.autowork = Value
+		autowork()
+	end    
+})
+
+Tab:AddButton({
+	Name = "10倍锻炼",
+	Callback = function()
+      Workout_Mul = 10
+  	end    
+})
+
+Tab:AddButton({
+	Name = "50倍锻炼",
+	Callback = function()
+      Workout_Mul = 50
+  	end    
+})
+
+Tab:AddButton({
+	Name = "100倍锻炼",
+	Callback = function()
+      Workout_Mul = 100
+  	end    
+})
+
+Tab:AddButton({
+	Name = "500倍锻炼",
+	Callback = function()
+      Workout_Mul = 500
+  	end    
+})
+
+Tab:AddButton({
+	Name = "1000倍锻炼",
+	Callback = function()
+      Workout_Mul = 1000
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "举重模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动举重",
+	Default = false,
+	Callback = function(Value)
+	_G.autolift = Value
+		autolift()
+    end	
+})
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+	_G.autosell = Value
+		autosell()
+	end
+})
+
+Tab:AddButton({
+	Name = "远程打开商店界面",
+	Callback = function()
+	game:GetService("Players").LocalPlayer.PlayerGui["Main_Gui"]["UpgradeMenu_Frame"].Visible = true
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "力量传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼（需手动装备）",
+	Default = false,
+	Callback = function(Value)
+		farming = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if farming then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+					end
+				end
+			)
+		end
+		)
+		spawn(function()
+			while farming do
+				wait()
+				pcall(
+					function()
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep")
+						c()
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9e9,9e9,9e9)
+						if not farming then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0)
+						end
+					end
+				)
+			end
+		end)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+		rebirth = Value
+		spawn(function()
+			while rebirth do
+				wait(0.1)
+				game:GetService("ReplicatedStorage").rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+			end
+		end)
+	end
+})
+
+Tab:AddButton({
+	Name = "收集所有宝箱",
+	Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/ninjashoujiallchest')))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "挥拳无间隔",
+	Callback = function()
+	game:GetService("Players").LocalPlayer.Backpack.Punch:FindFirstChildOfClass("NumberValue").Value = 0
+  	end    
+})
+
+
+Tab:AddToggle({
+	Name = "刷业报(需自己挥拳）",
+	Default = false,
+	Callback = function(Value)
+		_G.autokill = Value
+		    autokill()
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动打石头"
+
+})
+
+local autoTab0 = false
+
+Tab:AddToggle({
+	Name = "小石头（0耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab0 = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab0 then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(17.6, 3.8, 2119.2)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+local autoTab10 = false
+
+Tab:AddToggle({
+	Name = "中石头（10耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab10 = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab10 then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-151.0, 3.7, 438.5)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+local autoTab100 = false
+
+Tab:AddToggle({
+	Name = "大石头（100耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab100 = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab100 then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(166.8, 3.7, -137.2)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab5k = false
+
+Tab:AddToggle({
+	Name = "沙滩石头（5k耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab5k = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab5k then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(299.9, 3.7, -563.6)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab150k = false
+
+Tab:AddToggle({
+	Name = "蓝石头（150k耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab150k = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab150k then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2557.7, 3.7, -202.3)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab400k = false
+
+Tab:AddToggle({
+	Name = "紫色石头（400k耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab400k = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab400k then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2182.3, 3.7, 1292.7)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab750k = false
+
+Tab:AddToggle({
+	Name = "金色石头（750k耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab750k = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab750k then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7263.5, 3.7, -1217.2)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab1M = false
+
+Tab:AddToggle({
+	Name = "白色石头（1.5m耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab1M = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab1M then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4144.3, 987.9, -4032.2)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+autoTab5M = false
+
+Tab:AddToggle({
+	Name = "绿色石头（5m耐力👊）",
+	Default = false,
+	Callback = function(Value)
+		autoTab5M = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if autoTab5M then
+						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8966.7, 13.6, -5988.1)
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+						game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+							game:GetService("Players").LocalPlayer.Backpack.Punch
+						)
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "无后摇动画开蛋"
+
+})
+
+Tab:AddButton({
+	Name = "蓝色水晶（1k水晶）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Blue Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "绿色水晶（3k钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Green Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "冰霜水晶（5k钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Frost Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "神话水晶（8k钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Mythical Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "地狱水晶（15k钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Inferno Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "传奇水晶1（300k钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Legends Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "传奇水晶2（1m钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Muscle Elite Crystal")
+	end    
+})
+
+Tab:AddButton({
+	Name = "肌肉之王水晶（1.5m钻石）",
+	Callback = function()
+		game:GetService("ReplicatedStorage").rEvents.openCrystalRemote:InvokeServer("openCrystal", "Galaxy Oracle Crystal")
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "传送"
+	
+})	
+Tab:AddButton({
+	Name = "传送到出生点",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-42.7, 3.7, 404.2)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到小岛",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-37.636775970458984, 3.86960768699646, 1879.180908203125)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到冰霜健身房",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2623.022216796875, 3.716249465942383, -409.0733337402344)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到神话健身房",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2250.778076171875, 3.716248035430908, 1073.2266845703125)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到永恒健身房",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6758.9638671875, 3.71626353263855, -1284.918701171875)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到传奇健身房",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4603.28173828125, 987.869140625, -3897.86572265625)
+	end
+})
+
+Tab:AddButton({
+	Name = "传送到肌肉之王健身房",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-8625.9296875, 13.566278457641602, -5730.4736328125)
+	end
+})
+
+local Tab = Window:MakeTab({
+	Name = "举重传说模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "免费徽章",
+	Callback = function()
+	local badge1 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Strength1
+		local badge2 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Strength2
+		local badge3 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Strength3
+		local badge4 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Kill4
+		local badge5 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Kill3
+		local badge6 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Kill2
+		local badge7 = game:GetService"ReplicatedStorage".Players[game.Players.LocalPlayer.Name].Badge.Kill1
+		badge1.Value = true
+		wait(.9)
+		badge2.Value = true
+		wait(.9)
+		badge3.Value = true
+		wait(.9)
+		badge4.Value = true
+		wait(.9)
+		badge5.Value = true
+		wait(.9)
+		badge6.Value = true
+		wait(.9)
+		badge7.Value = true
+		wait(.9)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "兑换所有兑换码",
+	Callback = function()
+	for i,v in pairs(game:GetService("ReplicatedStorage").Codes:GetDescendants()) do
+			if v.ClassName == "BoolValue" then
+				game.ReplicatedStorage.Network.Port1:FireServer("Code",v.Name)
+			end
+		end
+  	end    
+})
+
+Tab:AddButton({
+	Name = "解锁所有通行证（表面文章）",
+	Callback = function()
+	for i,v in pairs(game:GetDescendants()) do
+			if v.ClassName == "BoolValue" then
+				v.Value = true
+			end
+		end
+  	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动功能"
+
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼速度",
+	Default = false,
+	Callback = function(Value)
+		_G.autospeed = Value
+		autospeed()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼伤害",
+	Default = false,
+	Callback = function(Value)
+		_G.autodam = Value
+		autodam()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼防御",
+	Default = false,
+	Callback = function(Value)
+		_G.autoxue = Value
+		autoxue()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼力量",
+	Default = false,
+	Callback = function(Value)
+		_G.autoli = Value
+		autoli()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买力量上限",
+	Default = false,
+	Callback = function(Value)
+		_G.autobyli = Value
+		autobyli()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买重量",
+	Default = false,
+	Callback = function(Value)
+		_G.autobywe = Value
+		autobywe()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+		_G.seli = Value
+		seli()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+		_G.cs = Value
+		cs()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动升天",
+	Default = false,
+	Callback = function(Value)
+		_G.st = Value
+		st()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "吃掉世界",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动拿方块",
+	Default = false,
+	Callback = function(Value)
+		_G.autona = Value
+		autona()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动吃方块",
+	Default = false,
+	Callback = function(Value)
+		_G.autoci = Value
+		autoci()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+		_G.chise = Value
+		chise()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动丢方块",
+	Default = false,
+	Callback = function(Value)
+		_G.chidiu = Value
+		chidiu()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买最大大小",
+	Default = false,
+	Callback = function(Value)
+		_G.chida = Value
+		chida()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买移动速度",
+	Default = false,
+	Callback = function(Value)
+		_G.chiys = Value
+		chiys()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买大小乘数",
+	Default = false,
+	Callback = function(Value)
+		_G.chixd = Value
+		chixd()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动购买吃的速度",
+	Default = false,
+	Callback = function(Value)
+		_G.chisu = Value
+		chisu()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动领取第一行在线奖励",
+	Default = false,
+	Callback = function(Value)
+		_G.chiq1 = Value
+		chiq1()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动领取第二个在线奖励",
+	Default = false,
+	Callback = function(Value)
+		_G.chiq2 = Value
+		chiq2()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动领取第三行在线奖励",
+	Default = false,
+	Callback = function(Value)
+		_G.chiq3 = Value
+		chiq3()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "健身联盟",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动比赛",
+	Default = false,
+	Callback = function(Value)
+		_G.gymb = Value
+		gymb()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "比赛自动点击",
+	Default = false,
+	Callback = function(Value)
+		_G.gymdj = Value
+		gymdj()	
+	end    
+})
+
+
+
+Tab:AddToggle({
+	Name = "自动买光环",
+	Default = false,
+	Callback = function(Value)
+		_G.automg = Value
+		automg()
+	end    
+})
+
+
+Tab:AddToggle({
+	Name = "自动开光环（无动画）",
+	Default = false,
+	Callback = function(Value)
+		_G.autokg = Value
+		autokg()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动开饰品（无动画）",
+	Default = false,
+	Callback = function(Value)
+		_G.automs = Value
+		automs()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动买展示动作",
+	Default = false,
+	Callback = function(Value)
+		_G.automz = Value
+		automz()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动抽展示动作（无动画）",
+	Default = false,
+	Callback = function(Value)
+		_G.autokz = Value
+		autokz()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "动物进化模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "伤害等级满级",
+	Default = false,
+	Callback = function(Value)
+	_G.autosh = Value
+		autosh()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "生命等级满级",
+	Default = false,
+	Callback = function(Value)
+	_G.autosm = Value
+		autosm()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "暴击伤害等级满级",
+	Default = false,
+	Callback = function(Value)
+	_G.autocd = Value
+		autocd()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "暴击率等级满级",
+	Default = false,
+	Callback = function(Value)
+	_G.autocc = Value
+		autocc()
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动功能"
+
+})
+
+Tab:AddToggle({
+	Name = "自动攻击",
+	Default = false,
+	Callback = function(Value)
+		_G.autoatt = Value
+		autoatt()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+	_G.ancs = Value
+		ancs()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动黄金重生",
+	Default = false,
+	Callback = function(Value)
+	_G.anhjcs = Value
+		anhjcs()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动钻石重生",
+	Default = false,
+	Callback = function(Value)
+	_G.anzscs = Value
+		anzscs()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "跳跃模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动获取跳跃力",
+	Default = false,
+	Callback = function(Value)
+		_G.ty = Value
+		    ty()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+		_G.tycs = Value
+		tycs()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "点击模拟器（JZP_X）",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "注意：这个游戏是由JZP_X做的"
+
+})
+
+Tab:AddToggle({
+	Name = "自动点击",
+	Default = false,
+	Callback = function(Value)
+		_G.dj = Value
+		dj()	
+	end    
+})
