@@ -13,6 +13,145 @@ local ato={
 
 local Workout_Mul = 1
 
+_G.cjrw1 = true
+
+function cjrw1()
+	while _G.cjrw1 == true do
+	wait()
+local args = {
+    [1] = "GamesReborn"
+}
+
+game:GetService("ReplicatedStorage").Events.Quest:FireServer(unpack(args))
+
+	end
+end
+
+
+
+_G.sjsp = true
+
+function sjsp()
+	while _G.sjsp == true do
+	wait()
+local args = {
+    [1] = "SpeedMultiplier"
+}
+
+game:GetService("ReplicatedStorage").Functions.Multiplier:InvokeServer(unpack(args))
+
+	end
+end
+
+_G.sjlm = true
+
+function sjlm()
+	while _G.sjlm == true do
+	wait()
+local args = {
+    [1] = "PsychicMultiplier"
+}
+
+game:GetService("ReplicatedStorage").Functions.Multiplier:InvokeServer(unpack(args))
+
+	end
+end
+
+_G.sjfy = true
+
+function sjfy()
+	while _G.sjfy == true do
+	wait()
+local args = {
+    [1] = "EnduranceMultiplier"
+}
+
+game:GetService("ReplicatedStorage").Functions.Multiplier:InvokeServer(unpack(args))
+
+	end
+end
+
+_G.sjll = true
+
+function sjll()
+	while _G.sjll == true do
+	wait()
+local args = {
+    [1] = "StrengthMultiplier"
+}
+
+game:GetService("ReplicatedStorage").Functions.Multiplier:InvokeServer(unpack(args))
+
+	end
+end
+
+_G.streng = true
+
+function streng()
+	while _G.streng == true do
+	wait()
+local args = {
+    [1] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+
+	end
+end
+
+_G.fangy = true
+
+function fangy()
+	while _G.fangy == true do
+	wait()
+local args = {
+    [1] = "Endurance"
+}
+
+game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+
+	end
+end
+
+_G.lingmei = true
+
+function lingmei()
+	while _G.lingmei == true do
+	wait()
+local args = {
+    [1] = "Psychic"
+}
+
+game:GetService("ReplicatedStorage").Events.Train:FireServer(unpack(args))
+
+	end
+end
+
+_G.dail = true
+
+function dail()
+	while _G.dail == true do
+	wait()
+local args = {
+    [1] = "FreeGift"
+}
+
+game:GetService("ReplicatedStorage").Events.DailyDeal:FireServer(unpack(args))
+
+	end
+end
+
+
+
+_G.armd = true
+
+function armd()
+	while _G.armd == true do
+	wait()
+game:GetService("ReplicatedStorage").Packages.Knit.Services.ToolService.RE.onClick:FireServer()
+	end
+end
+
 _G.gymb = true
 
 function gymb()
@@ -2116,5 +2255,108 @@ Tab:AddToggle({
 	Callback = function(Value)
 		_G.dj = Value
 		dj()	
+	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "手臂摔跤模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动锻炼（需手动装备哑铃或握把）",
+	Default = false,
+	Callback = function(Value)
+		_G.armd = Value
+		armd()	
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "超级力量格斗模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "自动领取每日奖励",
+	Default = false,
+	Callback = function(Value)
+	_G.dail = Value
+	    dail()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动接任务",
+	Default = false,
+	Callback = function(Value)
+	_G.cjrw1 = Value
+	    cjrw1()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动获取力量",
+	Default = false,
+	Callback = function(Value)
+	_G.streng = Value
+		streng()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动获取防御",
+	Default = false,
+	Callback = function(Value)
+	_G.fangy = Value
+	    fangy()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动获取灵媒",
+	Default = false,
+	Callback = function(Value)
+	_G.lingmei = Value
+		 lingmei()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动升级力量倍数",
+	Default = false,
+	Callback = function(Value)
+	_G.sjll = Value
+	    sjll()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动升级防御倍数",
+	Default = false,
+	Callback = function(Value)
+	_G.sjfy = Value
+	    sjfy()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动升级灵媒倍数",
+	Default = false,
+	Callback = function(Value)
+	_G.sjlm = Value
+	    sjlm()	
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动升级速度倍数",
+	Default = false,
+	Callback = function(Value)
+	_G.sjsp = Value
+	    sjsp()	
 	end    
 })
