@@ -462,11 +462,14 @@ _G.autolift = true
 function autolift()
     while _G.autolift == true do
     wait(0.00002)
-    local table_1 = {
-    [1] = 'GainMuscle'
-    };
-local Target = game:GetService("ReplicatedStorage").RemoteEvent;
-Target:FireServer(table_1);
+    local args = {
+    [1] = {
+        [1] = "GainMuscle"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
     end
 end 
 
@@ -475,11 +478,14 @@ _G.autosell = true
 function autosell()
     while _G.autosell == true do
     wait()
-local table_1 = {
-[1] = 'SellMuscle'
-};
-local Target = game:GetService("ReplicatedStorage").RemoteEvent;
-Target:FireServer(table_1);
+local args = {
+    [1] = {
+        [1] = "SellMuscle"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
     end
 end 
 
