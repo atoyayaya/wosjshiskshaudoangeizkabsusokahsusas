@@ -808,7 +808,7 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器")
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器")
 
 Tab:AddLabel("有时候部分按钮或勾选框可能按不到，滑动一下即可")
 
@@ -1310,7 +1310,7 @@ Tab:AddToggle({
 	Name = "自动开蛋（机器人蛋）",
 	Default = false,
 	Callback = function(Value)
-		_G.dalikd = Value
+	_G.dalikd = Value
 		dalikd()
 	end    
 })
