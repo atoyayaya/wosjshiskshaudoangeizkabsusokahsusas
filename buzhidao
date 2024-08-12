@@ -799,7 +799,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddLabel("脚本永久免费，请勿相信倒卖")
+Tab:AddLabel("脚本永久免费，请勿相信倒卖，有时候部分按钮或勾选框可能按不到，滑动一下即可")
 
 Tab:AddButton({
 	Name = "复制作者QQ号🐧",
@@ -810,7 +810,7 @@ Tab:AddButton({
 
 Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器")
 
-Tab:AddLabel("有时候部分按钮或勾选框可能按不到，滑动一下即可")
+Tab:AddParagraph("更新日志8.12","超级大力士模拟器新增自动开蛋（机器人）")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
