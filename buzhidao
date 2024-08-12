@@ -2916,3 +2916,60 @@ Tab:AddToggle({
 	    cj11()		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "强壮传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "自动锻炼"
+	
+})	
+
+_G.qzcs = true
+
+function qzcs()
+	while _G.qzcs == true do
+	wait()
+local args = {
+    [1] = "Food"
+}
+
+game:GetService("ReplicatedStorage").Remotes.UseTool:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动吃食物",
+	Default = false,
+	Callback = function(Value)
+		_G.qzcs = Value
+		qzcs()
+	end    
+})
+
+_G.qzdq = true
+
+function qzdq()
+	while _G.qzdq == true do
+	wait()
+local args = {
+    [1] = "Punch"
+}
+
+game:GetService("ReplicatedStorage").Remotes.UseTool:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打拳击",
+	Default = false,
+	Callback = function(Value)
+		_G.qzdq = Value
+		qzdq()
+	end    
+})
