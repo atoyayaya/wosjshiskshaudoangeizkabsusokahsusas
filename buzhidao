@@ -13,6 +13,16 @@ local ato={
 
 local Workout_Mul = 1
 
+_G.dalics = true
+
+function dalics()
+	while _G.dalics == true do
+	wait()
+game:GetService("ReplicatedStorage").StrongMan_Rebirth:FireServer()
+
+	end
+end
+
 _G.cjrw1 = true
 
 function cjrw1()
@@ -1284,6 +1294,15 @@ Tab:AddToggle({
 	Callback = function(Value)
 		_G.autola = Value
 		autola()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+		_G.dalics = Value
+		dalics()
 	end    
 })
 
