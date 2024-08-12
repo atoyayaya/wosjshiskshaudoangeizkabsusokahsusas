@@ -2974,6 +2974,16 @@ Tab:AddToggle({
 	end    
 })
 
+_G.qzaucs = true
+
+function qzaucs()
+	while _G.qzaucs == true do
+	wait()
+game:GetService("ReplicatedStorage").Remotes.YieldSell:InvokeServer()
+
+	end
+end
+
 Tab:AddToggle({
 	Name = "自动出售",
 	Default = false,
