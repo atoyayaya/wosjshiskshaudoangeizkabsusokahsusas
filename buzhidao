@@ -1278,17 +1278,40 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "自动拉物品（首次使用需开关几次）"
-
-})
-
 Tab:AddToggle({
 	Name = "自动拉物品（机器人区域）",
 	Default = false,
 	Callback = function(Value)
 		_G.autola = Value
 		autola()
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动开蛋"
+
+})
+
+_G.dalikd = true
+
+function dalikd()
+	while _G.dalikd == true do
+	wait()
+local args = {
+    [1] = "24Robo"
+}
+
+game:GetService("ReplicatedStorage").TGSPetShopRoll:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动开蛋（机器人蛋）",
+	Default = false,
+	Callback = function(Value)
+		_G.dalikd = Value
+		dalikd()
 	end    
 })
 
