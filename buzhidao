@@ -1339,6 +1339,13 @@ local Section = Tab:AddSection({
 
 })
 
+Tab:AddButton({
+	Name = "传送到锻炼区域",
+	Callback = function()
+    	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(114.35890197753906, 14.968358039855957, -212.35577392578125)
+  	end    
+})
+
 Tab:AddToggle({
 	Name = "自动倍数锻炼(举重的时候使用，先点下面几个才有倍数)",
 	Default = false,
