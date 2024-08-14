@@ -3103,20 +3103,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-_G.flzd = true
-
-function flzd()
-	while _G.flzd == true do
-	wait()
-local args = {
-    [1] = false
-}
-
-game:GetService("ReplicatedStorage").REvents.GainMachineEvent:FireServer(unpack(args))
-
-	end
-end
-
 local Section = Tab:AddSection({
 	Name = "自动锻炼"
 })
@@ -3144,7 +3130,19 @@ Tab:AddToggle({
 	end    
 })
 
+_G.flzd = true
 
+function flzd()
+	while _G.flzd == true do
+	wait()
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage").REvents.GainMachineEvent:FireServer(unpack(args))
+
+	end
+end
 
 Tab:AddToggle({
 	Name = "自动固定器材锻炼（需手动使用固定器材）",
