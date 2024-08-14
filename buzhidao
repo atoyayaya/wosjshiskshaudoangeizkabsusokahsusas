@@ -820,7 +820,7 @@ Tab:AddButton({
 
 Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器")
 
-Tab:AddParagraph("更新日志8.12","超级大力士模拟器新增自动开蛋和自动重生")
+Tab:AddParagraph("更新日志8.14","增加新游戏：升降传奇（lifting legend）和肌肉怪物")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -2978,5 +2978,250 @@ Tab:AddToggle({
 	Callback = function(Value)
 		_G.qzdq = Value
 		qzdq()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "升降传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.sjyl = true
+
+function sjyl()
+	while _G.sjyl == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.Weight:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动哑铃锻炼（需装备哑铃）",
+	Default = false,
+	Callback = function(Value)
+	_G.sjyl = Value
+		sjyl()		
+	end    
+})
+
+_G.sjhjyl = true
+
+function sjhjyl()
+	while _G.sjhjyl == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.Golden:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动黄金哑铃锻炼（需装备黄金哑铃）",
+	Default = false,
+	Callback = function(Value)
+	_G.sjhjyl = Value
+		sjhjyl()		
+	end    
+})
+
+_G.sjyt = true
+
+function sjyt()
+	while _G.sjyt == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.PullUps.Lifting,
+    [2] = game:GetService("Players").LocalPlayer.PlayerGui.PullUps:FindFirstChild("Pull Up")
+}
+
+game:GetService("ReplicatedStorage").Events.MachineGain:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动引体向上（需使用引体向上）",
+	Default = false,
+	Callback = function(Value)
+	_G.sjyt = Value
+		sjyt()		
+	end    
+})
+
+_G.sjsd = true
+
+function sjsd()
+	while _G.sjsd == true do
+	wait()
+local args = {
+    [1] = workspace.PUNCH.PUNCHRES.TWEEN.RESNEED,
+    [2] = workspace.PUNCH.PUNCHRES.TWEEN.RESGAIN,
+    [3] = workspace.PUNCH.PUNCHRES.TWEEN
+}
+
+game:GetService("ReplicatedStorage").Events.Punch:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打沙袋(需装备拳头，隔空打无动画）",
+	Default = false,
+	Callback = function(Value)
+	_G.sjsd = Value
+		sjsd()		
+	end    
+})
+
+_G.sjcscs = true
+
+function sjcscs()
+	while _G.sjcscs == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").Events.Experiance:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+	_G.sjcscs = Value
+		sjcscs()		
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "肌肉怪物",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.flzd = true
+
+function flzd()
+	while _G.flzd == true do
+	wait()
+local args = {
+    [1] = false
+}
+
+game:GetService("ReplicatedStorage").REvents.GainMachineEvent:FireServer(unpack(args))
+
+	end
+end
+
+local Section = Tab:AddSection({
+	Name = "自动锻炼"
+})
+
+_G.flyl = true
+
+function flyl()
+	while _G.flyl == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.Weight.RepGain
+}
+
+game:GetService("ReplicatedStorage").REvents.GainLeaderstats:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动哑铃锻炼（需手动装备哑铃）",
+	Default = false,
+	Callback = function(Value)
+	_G.flyl = Value
+		flyl()		
+	end    
+})
+
+
+
+Tab:AddToggle({
+	Name = "自动固定器材锻炼（需手动使用固定器材）",
+	Default = false,
+	Callback = function(Value)
+	_G.flzd = Value
+		flzd()	
+	end    
+})
+
+_G.flcs = true
+
+function flcs()
+	while _G.flcs == true do
+	wait()
+game:GetService("ReplicatedStorage").REvents.RebirthsEvent:InvokeServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+	_G.flcs = Value
+		flcs()		
+	end    
+})
+
+_G.flda = true
+
+function flds()
+	while _G.flds == true do
+	wait()
+local args = {
+    [1] = workspace.Punching:FindFirstChild("punching bag").PunchingFrame.Requires,
+    [2] = workspace.Punching:FindFirstChild("punching bag").PunchingFrame.Gain,
+    [3] = game:GetService("Players").LocalPlayer.Character.Punch.Left
+}
+
+game:GetService("ReplicatedStorage").REvents.PunchBags:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打绿沙袋",
+	Default = false,
+	Callback = function(Value)
+	_G.flds = Value
+		flds()		
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动设置大小"
+})
+
+_G.sd1 = true
+
+function sd1()
+	while _G.sd1 == true do
+	wait()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").REvents.SizeEvent:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动设置大小为1（挂机固定器材锻炼刷重生用）",
+	Default = false,
+	Callback = function(Value)
+	_G.sd1 = Value
+		sd1()		
 	end    
 })
