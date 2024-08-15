@@ -3107,6 +3107,96 @@ local Section = Tab:AddSection({
 	Name = "自动锻炼"
 })
 
+_G.flbs1 = true
+
+function flbs1()
+	while _G.flbs1 == true do
+	wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1338.6331787109375, -40.4758415222168, 1225.630615234375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1114.972412109375, -40.4760856628418, 1368.505859375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1330.3292236328125, -40.476932525634766, 1407.24072265625)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-61.466552734375, -40.474613189697266, 1088.0050048828125)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-174.6460723876953, -39.47532272338867, 1223.589599609375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-829.1718139648438, 8.23547077178955, 447.1918640136719)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-68.481201171875, -40.47494888305664, 1404.205810546875)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-287.9334411621094, 8.23547077178955, 244.857421875)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-842.2203369140625, 8.23547077178955, 244.1409454345703)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1262.930908203125, 8.235466957092285, 539.2144775390625)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-28.517627716064453, 8.235471725463867, 397.9040832519531)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7404.19677734375, -63.049354553222656, 887.514892578125)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6675.38037109375, -63.049320220947266, 883.1162109375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6660.34228515625, -63.049320220947266, 494.0069580078125)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7033.833984375, -63.04932403564453, 885.997802734375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18737.53125, 2.1455817222595215, 711.8202514648438)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7405.2451171875, -63.049320220947266, 598.6273193359375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18034.765625, 2.1455812454223633, 667.6303100585938)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18059.33203125, 2.1455817222595215, 313.2039794921875)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18737.53125, 2.1455817222595215, 711.8202514648438)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18475.3671875, 2.1455771923065186, 304.74505615234375)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18034.765625, 2.1455812454223633, 667.6303100585938)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(18018.328125, 2.1455812454223633, 524.760009765625)
+
+wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1428.6483154296875, -63.81245040893555, 5130.72265625)
+
+
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动传送到宝石",
+	Default = false,
+	Callback = function(Value)
+	_G.flbs1 = Value
+		flbs1()		
+	end    
+})
+
 _G.flyl = true
 
 function flyl()
@@ -3223,3 +3313,57 @@ Tab:AddToggle({
 		sd1()		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "宠物牧场模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.rebes = true
+
+function rebes()
+	while _G.rebes == true do
+	wait()
+local args = {
+    [1] = "EquipTopPets"
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动装备最好宠物",
+	Default = false,
+	Callback = function(Value)
+	_G.rebes = Value
+		rebes()		
+	end    
+})
+
+_G.sjbecw = true
+
+function sjbecw()
+	while _G.sjbecw == true do
+	wait()
+local args = {
+    [1] = "UpgradeRanch",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级宠物装备栏",
+	Default = false,
+	Callback = function(Value)
+	_G.sjbecw = Value
+		sjbecw()		
+	end    
+})
+
