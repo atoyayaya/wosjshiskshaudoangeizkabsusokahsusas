@@ -3172,7 +3172,7 @@ Tab:AddToggle({
 	end    
 })
 
-_G.flda = true
+_G.flds = true
 
 function flds()
 	while _G.flds == true do
