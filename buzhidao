@@ -3367,3 +3367,460 @@ Tab:AddToggle({
 	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "健身房王国",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.jswgcs = true
+
+function jswgcs()
+	while _G.jswgcs == true do
+	wait()
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.ClientHandler.Rebirth:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgcs = Value
+		jswgcs()		
+	end    
+})
+
+_G.jswgjl = true
+
+function jswgjl()
+	while _G.jswgjl == true do
+	wait()
+local args = {
+    [1] = "GainStrength"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.QuestService.Claim:FireServer(unpack(args))
+
+local args = {
+    [1] = "GainSpeed"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.QuestService.Claim:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动领取任务奖励",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgjl = Value
+		jswgjl()		
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动锻炼"
+})
+
+_G.jswg = true
+
+function jswg()
+	while _G.jswg == true do
+	wait()
+local args = {
+    [1] = "Weights"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动哑铃",
+	Default = false,
+	Callback = function(Value)
+	_G.jswg = Value
+		jswg()		
+	end    
+})
+
+_G.jswgp = true
+
+function jswgp()
+	while _G.jswgp == true do
+	wait()
+local args = {
+    [1] = "Treadmills"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动跑步",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgp = Value
+		jswgp()		
+	end    
+})
+
+_G.jswgw = true
+
+function jswgw()
+	while _G.jswgw == true do
+	wait()
+local args = {
+    [1] = "Benchpresses"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动卧推",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgw = Value
+		jswgw()		
+	end    
+})
+
+_G.jswgsd = true
+
+function jswgsd()
+	while _G.jswgsd == true do
+	wait()
+local args = {
+    [1] = "Punching Bags"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动沙袋",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgsd = Value
+		jswgsd()		
+	end    
+})
+
+_G.jswgty = true
+
+function jswgty()
+	while _G.jswgty == true do
+	wait()
+local args = {
+    [1] = "Prowler Sleds"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+local args = {
+    [1] = "Prowler Sleds"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动推哑铃",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgty = Value
+		jswgty()		
+	end    
+})
+
+_G.jswgyl = true
+
+function jswgyl()
+	while _G.jswgyl == true do
+	wait()
+local args = {
+    [1] = "Deadlift Weights"
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动硬拉",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgyl = Value
+		jswgyl()		
+	end    
+})
+local Section = Tab:AddSection({
+	Name = "自动BOSS"
+})
+
+
+_G.jswgdd = true
+
+function jswgdd()
+	while _G.jswgdd == true do
+	wait()
+local args = {
+    [1] = "Punch",
+    [2] = workspace.Maps:FindFirstChild("Starter Map").Boss.Npc
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打出生点boss（需靠近boss）",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgdd = Value
+		jswgdd()		
+	end    
+})
+
+_G.jswgdd1 = true
+
+function jswgdd1()
+	while _G.jswgdd1 == true do
+	wait()
+local args = {
+    [1] = "Punch",
+    [2] = workspace.Maps.Underworld.Boss.Npc
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打地下世界boss（需靠近boss）",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgdd1 = Value
+		jswgdd1()		
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "健身模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.jsmn = true
+
+function jsmn()
+	while _G.jsmn == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.Lift:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动锻炼",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmn = Value
+		jsmn()		
+	end    
+})
+
+_G.jsse = true
+
+function jsse()
+	while _G.jsse == true do
+	wait()
+game:GetService("ReplicatedStorage").Events.Sell:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+	_G.jsse = Value
+		jsse()		
+	end    
+})
+
+_G.jsmnw = true
+
+function jsmnw()
+	while _G.jsmnw == true do
+	wait()
+local args = {
+    [1] = "Weights"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Buy All"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动购买重量",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmnw = Value
+		jsmnw()		
+	end    
+})
+
+_G.jsmnb = true
+
+function jsmnb()
+	while _G.jsmnb == true do
+	wait()
+local args = {
+    [1] = "Bodies"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Buy All"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动购买身体",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmnb = Value
+		jsmnb()		
+	end    
+})
+
+_G.jsmnd = true
+
+function jsmnd()
+	while _G.jsmnd == true do
+	wait()
+local args = {
+    [1] = "Tiers"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Buy All"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动购买等级",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmnd = Value
+		jsmnd()		
+	end    
+})
+
+_G.jsmnm = true
+
+function jsmnm()
+	while _G.jsmnm == true do
+	wait()
+local args = {
+    [1] = "Morphs"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Buy All"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动购买形态",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmnm = Value
+		jsmnm()		
+	end    
+})
+
+_G.jsmna = true
+
+function jsmna()
+	while _G.jsmna == true do
+	wait()
+local args = {
+    [1] = "Auras"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Buy All"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动购买光环",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmna = Value
+		jsmna()		
+	end    
+})
+
+_G.jsmnbo = true
+
+function jsmnbo()
+	while _G.jsmnbo == true do
+	wait()
+local args = {
+    [1] = workspace.Boss.Model.Boss
+}
+
+game:GetService("ReplicatedStorage").Events.Damage:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打小boss（需靠近boss）",
+	Default = false,
+	Callback = function(Value)
+	_G.jsmnbo = Value
+		jsmnbo()		
+	end    
+})
+
+_G.ppp = true
+
+function ppp()
+	while _G.ppp == true do
+	wait()
+local args = {
+    [1] = workspace:FindFirstChild("Mega Boss").Model.Boss2
+}
+
+game:GetService("ReplicatedStorage").Events.Damage:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打大boss（需靠近boss）",
+	Default = false,
+	Callback = function(Value)
+	_G.ppp = Value
+		ppp()		
+	end    
+})
