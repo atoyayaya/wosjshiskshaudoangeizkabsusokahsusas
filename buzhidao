@@ -2909,11 +2909,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "自动锻炼"
-	
-})	
-
 _G.qzcs = true
 
 function qzcs()
@@ -2959,6 +2954,126 @@ Tab:AddToggle({
 		qzdq()
 	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "自动购买"
+})
+
+_G.ato = true
+
+function ato()
+	while _G.ato == true do
+	wait()
+local args = {
+    [1] = "Fist"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RequestBuyAll:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买拳头",
+	Default = false,
+	Callback = function(Value)
+	_G.ato = Value
+		ato()		
+	end    
+})
+
+_G.ato1 = true
+
+function ato1()
+	while _G.ato1 == true do
+	wait()
+local args = {
+    [1] = "Food"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RequestBuyAll:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买食物",
+	Default = false,
+	Callback = function(Value)
+	_G.ato1 = Value
+		ato1()		
+	end    
+})
+
+_G.ato2 = true
+
+function ato2()
+	while _G.ato2 == true do
+	wait()
+local args = {
+    [1] = "Stomach"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RequestBuyAll:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买肚子",
+	Default = false,
+	Callback = function(Value)
+	_G.ato2 = Value
+		ato2()		
+	end    
+})
+
+_G.ato3 = true
+
+function ato3()
+	while _G.ato3 == true do
+	wait()
+local args = {
+    [1] = "Rebirth"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RequestBuyAll:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买重生",
+	Default = false,
+	Callback = function(Value)
+	_G.ato3 = Value
+		ato3()		
+	end    
+})
+
+_G.ato4 = true
+
+function ato4()
+	while _G.ato4 == true do
+	wait()
+local args = {
+    [1] = "Jump"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RequestBuyAll:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买跳跃",
+	Default = false,
+	Callback = function(Value)
+	_G.ato4 = Value
+		ato4()		
+	end    
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "升降传奇",
@@ -3803,3 +3918,74 @@ Tab:AddToggle({
 		ppp()		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "升降传奇",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.xrsjxq = true
+
+function xrsjxq()
+	while _G.xrsjxq == true do
+	wait()
+local args = {
+    [1] = "123ase"
+}
+
+workspace.Events.AddBite28:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动喝饮料",
+	Default = false,
+	Callback = function(Value)
+	_G.xrsjxq = Value
+		xrsjxq()		
+	end    
+})
+
+_G.tjxr = true
+
+function tjxr()
+	while _G.tjxr == true do
+	wait()
+local args = {
+    [1] = "130ss1"
+}
+
+workspace.PrestigeEvent.Prestige:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动重生",
+	Default = false,
+	Callback = function(Value)
+	_G.tjxr = Value
+		tjxr()		
+	end    
+})
+
+_G.xrcs = true
+
+function xrcs()
+	while _G.xrcs == true do
+	wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2222.473388671875, 62.99913787841797, -1771.406982421875)
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动四倍出售",
+	Default = false,
+	Callback = function(Value)
+	_G.xrcs = Value
+		xrcs()		
+	end    
+})
+
