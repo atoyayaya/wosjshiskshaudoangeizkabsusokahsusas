@@ -818,9 +818,9 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
 
-Tab:AddParagraph("更新日志8.16","健身模拟器和健身房王国")
+Tab:AddParagraph("更新日志8.17","速度模拟器Speed simulator")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -3081,6 +3081,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","Lifting Legend")
+
 _G.sjyl = true
 
 function sjyl()
@@ -3196,6 +3198,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","Muscle Monsters")
 
 local Section = Tab:AddSection({
 	Name = "自动锻炼"
@@ -3714,6 +3718,59 @@ Tab:AddToggle({
 	end    
 })
 
+_G.jswgd5 = true
+
+function jswgd5()
+	while _G.jswgd5 == true do
+	wait()
+local args = {
+    [1] = "Smash",
+    [2] = {
+        ["Npc"] = workspace.Maps:FindFirstChild("Starter Map").Boss.Npc
+    }
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打出生点boss（5点伤害）",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgd5 = Value
+		jswgd5()		
+	end    
+})
+
+_G.jswgd55 = true
+
+function jswgd55()
+	while _G.jswgd55 == true do
+	wait()
+local args = {
+    [1] = "Smash",
+    [2] = {
+        ["Npc"] = workspace.Maps.Underworld.Boss.Npc
+    }
+}
+
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.EquipmentHandler.Use:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动打地下世界boss（5点伤害）",
+	Default = false,
+	Callback = function(Value)
+	_G.jswgd55 = Value
+		jswgd55()		
+	end    
+})
+
+
 local Tab = Window:MakeTab({
 	Name = "健身模拟器",
 	Icon = "rbxassetid://4483345998",
@@ -3920,10 +3977,12 @@ Tab:AddToggle({
 })
 
 local Tab = Window:MakeTab({
-	Name = "升降传奇",
+	Name = "速度模拟器",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名:","Speed Simulator")
 
 _G.xrsjxq = true
 
