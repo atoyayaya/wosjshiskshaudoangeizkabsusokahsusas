@@ -822,8 +822,6 @@ Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传�
 
 Tab:AddParagraph("更新日志8.16","健身模拟器")
 
-Tab:AddParagraph("提示","为了防止某些游戏跟某些游戏重名，我将会把游戏英文名和作者写在相应功能里")
-
 local Tab = Window:MakeTab({
 	Name = "通用功能",
 	Icon = "rbxassetid://5480743826",
@@ -921,9 +919,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("忍者传奇（Ninja legend）","作者：Scriptbloxian Studios")
-
 
 Tab:AddToggle({
 	Name = "自动挥剑",
@@ -1107,8 +1102,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("极速传奇（speed of legend）","作者：Scriptbloxian Studios")
-
 Tab:AddButton({
 	Name = "自动卡宠",
 	Callback = function()
@@ -1290,8 +1283,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("超级大力士模拟器（strongman simulator）","作者：The Gang Stockholm")
-
 Tab:AddToggle({
 	Name = "自动拉物品（机器人区域）",
 	Default = false,
@@ -1401,8 +1392,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("举重模拟器（lifting simulator）","作者：Man of the year")
-
 Tab:AddToggle({
 	Name = "自动举重",
 	Default = false,
@@ -1433,8 +1422,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("力量传奇（Muscles legend）","作者：Scriptbloxian Studios")
 
 Tab:AddToggle({
 	Name = "自动锻炼（需手动装备）",
@@ -1876,9 +1863,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("举重传说模拟器（lift legend simulator）","作者：Antiael")
-l")
-
 Tab:AddButton({
 	Name = "免费徽章",
 	Callback = function()
@@ -2020,8 +2004,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("吃掉世界（eat the world）","作者：mPhase")
-
 Tab:AddToggle({
 	Name = "自动拿方块",
 	Default = false,
@@ -2127,8 +2109,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("健身联盟（Gym League）","作者：1v2 Studios")
-
 Tab:AddToggle({
 	Name = "自动比赛",
 	Default = false,
@@ -2200,8 +2180,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("动物进化模拟器（animals evolution simulator）","作者：WildRun")
 
 Tab:AddToggle({
 	Name = "伤害等级满级",
@@ -2329,8 +2307,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("超级力量格斗模拟器（super power fighting simulator）","作者：GamesReborn")
 
 Tab:AddToggle({
 	Name = "自动接任务",
@@ -2992,8 +2968,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("升降传奇（Lifting legend）","作者：Cherif Studios")
-
 _G.sjyl = true
 
 function sjyl()
@@ -3005,7 +2979,7 @@ game:GetService("ReplicatedStorage").Events.Weight:FireServer()
 end
 
 Tab:AddToggle({
-	Name = "自动哑铃锻炼（需装备哑铃）",
+	Name = "自动哑铃锻炼",
 	Default = false,
 	Callback = function(Value)
 	_G.sjyl = Value
@@ -3024,7 +2998,7 @@ game:GetService("ReplicatedStorage").Events.Golden:FireServer()
 end
 
 Tab:AddToggle({
-	Name = "自动黄金哑铃锻炼（需装备黄金哑铃）",
+	Name = "自动黄金哑铃锻炼",
 	Default = false,
 	Callback = function(Value)
 	_G.sjhjyl = Value
@@ -3073,7 +3047,7 @@ game:GetService("ReplicatedStorage").Events.Punch:InvokeServer(unpack(args))
 end
 
 Tab:AddToggle({
-	Name = "自动打沙袋(需装备拳头，隔空打无动画）",
+	Name = "自动打沙袋",
 	Default = false,
 	Callback = function(Value)
 	_G.sjsd = Value
@@ -3109,8 +3083,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("肌肉怪物（Muscles Monsters）","作者：Cherif Studios")
 
 local Section = Tab:AddSection({
 	Name = "自动锻炼"
@@ -3329,8 +3301,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("宠物牧场模拟器2（pet ranch simulator 2）","作者：Albatross Studio")
-
 _G.rebes = true
 
 function rebes()
@@ -3383,8 +3353,6 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
-Tab:AddParagraph("健身房王国（Gym Realms）","作者：Xenobyte")
 
 _G.jswgcs = true
 
