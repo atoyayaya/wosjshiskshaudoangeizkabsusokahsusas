@@ -1876,7 +1876,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("举重传说模拟器（lift legend simulator）","作者：Antiael"
+Tab:AddParagraph("举重传说模拟器（lift legend simulator）","作者：Antiael")
 l")
 
 Tab:AddButton({
@@ -2201,6 +2201,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("动物进化模拟器（animals evolution simulator）","作者：WildRun")
+
 Tab:AddToggle({
 	Name = "伤害等级满级",
 	Default = false,
@@ -2322,27 +2324,13 @@ Tab:AddToggle({
 	end    
 })
 
-
-local Tab = Window:MakeTab({
-	Name = "手臂摔跤模拟器",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddToggle({
-	Name = "自动锻炼（需手动装备哑铃或握把）",
-	Default = false,
-	Callback = function(Value)
-		_G.armd = Value
-		armd()	
-	end    
-})
-
 local Tab = Window:MakeTab({
 	Name = "超级力量格斗模拟器",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("超级力量格斗模拟器（super power fighting simulator）","作者：GamesReborn")
 
 Tab:AddToggle({
 	Name = "自动接任务",
@@ -2945,6 +2933,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("强壮传奇（Thick legend）","作者：Blox Universe")
+
 local Section = Tab:AddSection({
 	Name = "自动锻炼"
 	
@@ -3001,6 +2991,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("升降传奇（lifting legends）","作者：Scriptbloxian Studios")
 
 _G.sjyl = true
 
