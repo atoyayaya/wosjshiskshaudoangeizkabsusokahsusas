@@ -818,9 +818,11 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器")
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
 
-Tab:AddParagraph("更新日志8.14","增加新游戏：升降传奇（lifting legend）和肌肉怪物")
+Tab:AddParagraph("更新日志8.16","健身模拟器")
+
+Tab:AddParagraph("提示","为了防止某些游戏跟某些游戏重名，我将会把游戏英文名和作者写在相应功能里")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -919,6 +921,9 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("忍者传奇（Ninja legend）","作者：Scriptbloxian Studios")
+
 
 Tab:AddToggle({
 	Name = "自动挥剑",
@@ -1102,10 +1107,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tab:AddSection({
-	Name = "自动功能"
-
-})
+Tab:AddParagraph("极速传奇（speed of legend）","作者：Scriptbloxian Studios")
 
 Tab:AddButton({
 	Name = "自动卡宠",
@@ -1288,6 +1290,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("超级大力士模拟器（strongman simulator）","作者：The Gang Stockholm")
+
 Tab:AddToggle({
 	Name = "自动拉物品（机器人区域）",
 	Default = false,
@@ -1397,6 +1401,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("举重模拟器（lifting simulator）","作者：Man of the year")
+
 Tab:AddToggle({
 	Name = "自动举重",
 	Default = false,
@@ -1427,6 +1433,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("力量传奇（Muscles legend）","作者：Scriptbloxian Studios")
 
 Tab:AddToggle({
 	Name = "自动锻炼（需手动装备）",
@@ -1868,6 +1876,9 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("举重传说模拟器（lift legend simulator）","作者：Antiael"
+l")
+
 Tab:AddButton({
 	Name = "免费徽章",
 	Callback = function()
@@ -2009,6 +2020,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("吃掉世界（eat the world）","作者：mPhase")
+
 Tab:AddToggle({
 	Name = "自动拿方块",
 	Default = false,
@@ -2113,6 +2126,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("健身联盟（Gym League）","作者：1v2 Studios")
 
 Tab:AddToggle({
 	Name = "自动比赛",
