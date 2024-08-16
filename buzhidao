@@ -820,7 +820,7 @@ Tab:AddButton({
 
 Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，点击模拟器（JZP_X），动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
 
-Tab:AddParagraph("更新日志8.16","健身模拟器")
+Tab:AddParagraph("更新日志8.16","健身模拟器和健身房王国")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -2909,8 +2909,6 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("强壮传奇（Thick legend）","作者：Blox Universe")
-
 local Section = Tab:AddSection({
 	Name = "自动锻炼"
 	
@@ -2979,7 +2977,7 @@ game:GetService("ReplicatedStorage").Events.Weight:FireServer()
 end
 
 Tab:AddToggle({
-	Name = "自动哑铃锻炼",
+	Name = "自动哑铃锻炼（需装备哑铃）",
 	Default = false,
 	Callback = function(Value)
 	_G.sjyl = Value
@@ -2998,7 +2996,7 @@ game:GetService("ReplicatedStorage").Events.Golden:FireServer()
 end
 
 Tab:AddToggle({
-	Name = "自动黄金哑铃锻炼",
+	Name = "自动黄金哑铃锻炼（需装备黄金哑铃）",
 	Default = false,
 	Callback = function(Value)
 	_G.sjhjyl = Value
@@ -3047,7 +3045,7 @@ game:GetService("ReplicatedStorage").Events.Punch:InvokeServer(unpack(args))
 end
 
 Tab:AddToggle({
-	Name = "自动打沙袋",
+	Name = "自动打沙袋(需装备拳头，隔空打无动画）",
 	Default = false,
 	Callback = function(Value)
 	_G.sjsd = Value
