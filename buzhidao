@@ -820,7 +820,7 @@ Tab:AddButton({
 
 Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
 
-Tab:AddParagraph("更新日志8.17","速度模拟器Speed simulator")
+Tab:AddParagraph("更新日志8.17","速度模拟器Speed simulator，扣字脚本")
 
 local Tab = Window:MakeTab({
 	Name = "通用功能",
@@ -830,6 +830,155 @@ local Tab = Window:MakeTab({
 
 local Section = Tab:AddSection({
 	Name = "通用功能"
+})
+
+local Section = Tab:AddSection({
+	Name = "扣字"
+})
+
+_G.szj = true 
+
+function szj()
+	while _G.szj == true do
+	wait(1)
+local args = {
+    [1] = "行不行",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "好不好",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "在不在",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "动不动",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "受气包",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "臭屁虫",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+end
+
+wait(1)
+local args = {
+    [1] = "癞蛤蟆",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+Tab:AddLabel("roblox发言有限制，连续7条后要冷却10秒")
+
+Tab:AddToggle({
+	Name = "三字经（秒三）",
+	Default = false,
+	Callback = function(Value)
+	_G.szj = Value
+	    szj()		
+	end    
+})
+
+_G.sz = true
+
+function sz()
+	while _G.sz == true do
+	wait()
+wait(1)
+local args = {
+    [1] = "反反复复",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "耀武扬威",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "光宗耀祖",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "抓耳挠腮",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "毛手毛脚",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "井底之蛙",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+
+wait(1)
+local args = {
+    [1] = "大头儿子",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+	end
+end
+
+Tab:AddToggle({
+	Name = "四字成语（秒四）",
+	Default = false,
+	Callback = function(Value)
+	_G.sz = Value
+	    sz()		
+	end    
 })
 
 Tab:AddButton({
