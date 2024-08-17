@@ -829,10 +829,6 @@ local Tab = Window:MakeTab({
 })
 
 local Section = Tab:AddSection({
-	Name = "通用功能"
-})
-
-local Section = Tab:AddSection({
 	Name = "扣字"
 })
 
