@@ -818,7 +818,7 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器")
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器，健身房大亨")
 
 Tab:AddParagraph("更新日志8.17","速度模拟器Speed simulator，扣字脚本")
 
@@ -4340,4 +4340,92 @@ Tab:AddToggle({
 		xrcs()		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "健身房大亨",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+_G.jsdhd = true
+
+function jsdhd()
+	while _G.jsdhd == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer,
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RemoteObjects.NPCCheckedIn:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动招待客人",
+	Default = false,
+	Callback = function(Value)
+	_G.jsdhd = Value
+		jsdhd()		
+	end    
+})
+
+_G.mh = true
+
+function mh()
+	while _G.mh == true do
+	wait()
+game:GetService("ReplicatedStorage").RemoteObjects.RequestBuildUpgrade:InvokeServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级健身房",
+	Default = false,
+	Callback = function(Value)
+	_G.mh = Value
+		mh()		
+	end    
+})
+
+_G.jsdhj = true
+
+function jsdhj()
+	while _G.jsdhj == true do
+	wait()
+game:GetService("ReplicatedStorage").RemoteObjects.ClaimRushCash:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动收集金币",
+	Default = false,
+	Callback = function(Value)
+	_G.jsdhj = Value
+		jsdhj()		
+	end    
+})
+
+_G.jsdhdl = true
+
+function jsdhdl()
+	while _G.jsdhdl == true do
+	wait()
+game:GetService("ReplicatedStorage").RemoteObjects.WorkedOut:FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动锻炼",
+	Default = false,
+	Callback = function(Value)
+	_G.jsdhdl = Value
+		jsdhdl()		
+	end    
+})
+
 
