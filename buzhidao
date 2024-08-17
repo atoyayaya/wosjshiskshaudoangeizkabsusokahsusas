@@ -3162,7 +3162,7 @@ game:GetService("ReplicatedStorage").Events.Punch:InvokeServer(unpack(args))
 end
 
 Tab:AddToggle({
-	Name = "自动打沙袋(需装备拳头，隔空打无动画）",
+	Name = "自动打沙袋",
 	Default = false,
 	Callback = function(Value)
 	_G.sjsd = Value
@@ -3192,6 +3192,154 @@ Tab:AddToggle({
 		sjcscs()		
 	end    
 })
+
+_G.chsj = true
+
+function chsj()
+	while _G.chsj == true do
+	wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "ffffff",
+    [3] = 25,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.white.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "00ff1e",
+    [3] = 35,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.green.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "ffd900",
+    [3] = 50,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.yellow.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "ff0000",
+    [3] = 55,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.red.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "0022ff",
+    [3] = 200,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.Blue.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+wait(0.5)
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Trail,
+    [2] = "e100ff",
+    [3] = 500,
+    [4] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.PunchMenu.list.ScrollingFrame.inf.rebNEED
+}
+
+game:GetService("ReplicatedStorage").Events.TrailColorEvent:FireServer(unpack(args))
+
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "彩虹足迹（需足够重生）",
+	Default = false,
+	Callback = function(Value)
+	_G.chsj = Value
+		chsj()		
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "宠物功能"
+})
+
+_G.sjkd = true
+
+function sjkd()
+	while _G.sjkd == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.petsBuy.petbuyiing.openButton.Price
+}
+
+game:GetService("ReplicatedStorage").Events.Changeet:InvokeServer(unpack(args))
+
+	end
+end
+Tab:AddToggle({
+	Name = "自动开蛋（5m金币）",
+	Default = false,
+	Callback = function(Value)
+	_G.sjkd = Value
+		sjkd()		
+	end    
+})
+
+_G.sjsc = true
+
+function sjsc()
+	while _G.sjsc == true do
+	wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Brown Pet"),
+    [2] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Brown Pet").PetInOwnedPets,
+    [3] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Brown Pet").SellPrice
+}
+
+game:GetService("ReplicatedStorage").Events.SellPet:InvokeServer(unpack(args))
+
+wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Blue Pet"),
+    [2] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Blue Pet").PetInOwnedPets,
+    [3] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets:FindFirstChild("Blue Pet").SellPrice
+}
+
+game:GetService("ReplicatedStorage").Events.SellPet:InvokeServer(unpack(args))
+
+wait()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets.ButterFly,
+    [2] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets.ButterFly.PetInOwnedPets,
+    [3] = game:GetService("Players").LocalPlayer.PlayerGui.gameguis.petsMenu.ScrollingPets.ButterFly.SellPrice
+}
+
+game:GetService("ReplicatedStorage").Events.SellPet:InvokeServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动删除5m金币蛋中除黑暗传奇以外所有宠物",
+	Default = false,
+	Callback = function(Value)
+	_G.sjsc= Value
+		sjsc()		
+	end    
+})
+
+
 
 local Tab = Window:MakeTab({
 	Name = "肌肉怪物",
