@@ -883,8 +883,6 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-	end
-end
 
 wait(1)
 local args = {
@@ -893,6 +891,8 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+    end
+end
 
 Tab:AddLabel("roblox发言有限制，连续7条后要冷却10秒")
 
@@ -3741,11 +3741,10 @@ function sjbecw()
 	wait()
 local args = {
     [1] = "UpgradeRanch",
-    [2] = true
+    [2] = false
 }
 
 game:GetService("ReplicatedStorage").RemoteFunctions.MainRemoteFunction:InvokeServer(unpack(args))
-
 	end
 end
 
