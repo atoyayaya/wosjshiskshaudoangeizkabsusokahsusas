@@ -1667,6 +1667,95 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("游戏英文名：","💪muscle legend")
 
+local Section = Tab:AddSection({
+	Name = "个人属性修改[虚假]"
+})
+
+Tab:AddTextbox({
+	Name = "修改重生",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.leaderstats["Rebirths"].Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改重生倍数",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.rebirthMulitiplier.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改力量",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.leaderstats["Strength"].Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改耐力",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.Durability.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改敏捷",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.Agility.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改宝石",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.Gems.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改坏人业报",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.evilKarma.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改好人业报",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.goodKarma.Value = Value
+	end	  
+})
+
+Tab:AddTextbox({
+	Name = "修改总业报",
+	Default = "请输入",
+	TextDisappear = true,
+	Callback = function(Value)
+		game:GetService("Players").LocalPlayer.Kills.Value = Value
+	end	  
+})
+
+local Section = Tab:AddSection({
+	Name = "自动功能"
+})
+
 Tab:AddToggle({
 	Name = "自动锻炼（需手动装备）",
 	Default = false,
@@ -1988,7 +2077,7 @@ Tab:AddToggle({
 })
 
 local Section = Tab:AddSection({
-	Name = "无后摇动画开蛋"
+	Name = "无动画开蛋"
 
 })
 
