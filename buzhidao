@@ -4475,6 +4475,13 @@ C.Anchored = true
   	end    
 })
 
+Tab:AddButton({
+	Name = "传送到安全区域",
+	Callback = function()
+game:GetService("Players").LocalPlayer.PlayerGui["Main_Gui"]["Upgrade_Menu_Frame"].Visible = true
+  	end    
+})
+
 _G.cjchcsw = true
 
 function cjchcsw()
