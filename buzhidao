@@ -979,6 +979,10 @@ Tab:AddToggle({
 	end    
 })
 
+local Section = Tab:AddSection({
+	Name = "通用"
+})
+
 Tab:AddButton({
 	Name = "飞行",
 	Callback = function()
@@ -1054,19 +1058,15 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddButton({
-	Name = "销毁ui",
-	Callback = function()
-      		OrionLib:Destroy()
-  	end    
-})
-
 local Tab = Window:MakeTab({
 	Name = "忍者传奇",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","Ninja legend")
+
+_G.cjchcsw = true
 Tab:AddToggle({
 	Name = "自动挥剑",
 	Default = false,
@@ -1242,6 +1242,8 @@ Tab:AddButton({
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/ninjashoujiallchest')))()
   	end    
 })
+
+Tab:AddParagraph("游戏英文名：","speed of legend")
 
 local Tab = Window:MakeTab({
 	Name = "极速传奇",
@@ -1430,6 +1432,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","Strongman simulator")
+
 Tab:AddToggle({
 	Name = "自动拉物品（机器人区域）",
 	Default = false,
@@ -1532,12 +1536,13 @@ Tab:AddButton({
   	end    
 })
 
-
 local Tab = Window:MakeTab({
 	Name = "举重模拟器",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","lifting simulator")
 
 Tab:AddToggle({
 	Name = "自动举重",
@@ -1569,6 +1574,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","muscle legend")
 
 Tab:AddToggle({
 	Name = "自动锻炼（需手动装备）",
@@ -2010,6 +2017,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","lifting legend simulator")
+
 Tab:AddButton({
 	Name = "免费徽章",
 	Callback = function()
@@ -2151,6 +2160,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","Eat the world")
+
 Tab:AddToggle({
 	Name = "自动拿方块",
 	Default = false,
@@ -2256,6 +2267,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","gym league")
+
 Tab:AddToggle({
 	Name = "自动比赛",
 	Default = false,
@@ -2327,6 +2340,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","animals evolution simulator")
 
 Tab:AddToggle({
 	Name = "伤害等级满级",
