@@ -804,6 +804,19 @@ end
 end
 
 local Tab = Window:MakeTab({
+	Name = "销毁ui",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "销毁ui",
+	Callback = function()
+      		OrionLib:Destroy()
+  	end    
+})
+
+local Tab = Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
