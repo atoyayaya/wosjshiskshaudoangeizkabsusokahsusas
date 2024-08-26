@@ -4476,7 +4476,7 @@ C.Anchored = true
 })
 
 Tab:AddButton({
-	Name = "传送到安全区域",
+	Name = "远程打开商店界面",
 	Callback = function()
 game:GetService("Players").LocalPlayer.PlayerGui["Main_Gui"]["Upgrade_Menu_Frame"].Visible = true
   	end    
