@@ -1243,13 +1243,13 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("游戏英文名：","speed of legend")
-
 local Tab = Window:MakeTab({
 	Name = "极速传奇",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","speed of legend⚡️")
 
 Tab:AddButton({
 	Name = "自动卡宠",
@@ -1542,7 +1542,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("游戏英文名：","lifting simulator")
+Tab:AddParagraph("游戏英文名：","💪lifting simulator")
 
 Tab:AddToggle({
 	Name = "自动举重",
@@ -1575,7 +1575,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("游戏英文名：","muscle legend")
+Tab:AddParagraph("游戏英文名：","💪muscle legend")
 
 Tab:AddToggle({
 	Name = "自动锻炼（需手动装备）",
@@ -2017,7 +2017,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("游戏英文名：","lifting legend simulator")
+Tab:AddParagraph("游戏英文名：","💪lifting legend simulator")
 
 Tab:AddButton({
 	Name = "免费徽章",
@@ -2445,30 +2445,12 @@ Tab:AddToggle({
 })
 
 local Tab = Window:MakeTab({
-	Name = "点击模拟器（JZP_X）",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-local Section = Tab:AddSection({
-	Name = "注意：这个游戏是由JZP_X做的"
-
-})
-
-Tab:AddToggle({
-	Name = "自动点击",
-	Default = false,
-	Callback = function(Value)
-		_G.dj = Value
-		dj()	
-	end    
-})
-
-local Tab = Window:MakeTab({
 	Name = "超级力量格斗模拟器",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","super power fighting simulator")
 
 Tab:AddToggle({
 	Name = "自动接任务",
@@ -3070,6 +3052,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","Thick legend")
 
 _G.qzcs = true
 
@@ -3723,10 +3707,12 @@ Tab:AddToggle({
 })
 
 local Tab = Window:MakeTab({
-	Name = "宠物牧场模拟器",
+	Name = "宠物牧场模拟器2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","👣Pet Ranch Simulator 2👣")
 
 _G.rebes = true
 
@@ -3779,6 +3765,8 @@ local Tab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
+Tab:AddParagraph("游戏英文名：","💪Gym Realms💥")
 
 _G.jswgcs = true
 
@@ -4086,6 +4074,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","Fitness💪 Simulator")
+
 _G.jsmn = true
 
 function jsmn()
@@ -4363,6 +4353,8 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("游戏英文名：","💪Gym Tycoon!")
+
 _G.jsdhd = true
 
 function jsdhd()
@@ -4450,7 +4442,7 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("游戏英文名：","Super eater simulator")
+Tab:AddParagraph("游戏英文名：","🍟Super eater simulator")
 
 Tab:AddButton({
 	Name = "传送到安全区域",
