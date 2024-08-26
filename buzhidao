@@ -894,7 +894,7 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "更新日志",
+	Name = "8.27更新日志",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
 })
