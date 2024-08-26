@@ -817,30 +817,6 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "付费功能",
-	Icon = "rbxassetid://7733960981",
-	PremiumOnly = false
-})
-
-_G.iwq = true
- 
-function iwq()
-    while _G.iwq == true do
-    wait()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/wosjshiskshaudoangeizkabsusokahsusas/main/fufei')))()
-    end
-end 
-
-Tab:AddToggle({
-	Name = "打开付费版ui（请确定你是否是付费购买，否则后果自负）",
-	Default = false,
-	Callback = function(Value)
-	_G.iwq = Value
-		iwq()
-	end  
-})
-
-local Tab = Window:MakeTab({
 	Name = "公告",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
