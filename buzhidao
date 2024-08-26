@@ -4427,4 +4427,79 @@ Tab:AddToggle({
 	end    
 })
 
+local Tab = Window:MakeTab({
+	Name = "超级食肉者模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
+Tab:AddParagraph("游戏英文名：","Super eater simulator")
+
+Tab:AddButton({
+	Name = "传送到安全区域",
+	Callback = function()
+local plr = game.Players
+local lplr = plr.LocalPlayer
+local lchar = lplr.Character
+local HRP = lchar.HumanoidRootPart
+ 
+HRP.CFrame = CFrame.new(-100, 100, -10000)
+ 
+local C = Instance.new("Part")
+C.Parent = workspace
+C.CFrame = CFrame.new(-100, 50, -10000)
+C.Size = Vector3.new(1000000, 100, 10000000)
+C.Anchored = true
+  	end    
+})
+
+_G.cjchcsw = true
+
+function cjchcsw()
+	while _G.cjchcsw == true do
+	wait()
+local args = {
+    [1] = {
+        [1] = "GainMass",
+        [2] = 0
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动吃食物（需装备食物）",
+	Default = false,
+	Callback = function(Value)
+	_G.cjchcsw = Value
+		cjchcsw()		
+	end    
+})
+
+_G.cjchcs = true
+
+function cjchcs()
+	while _G.cjchcs == true do
+	wait()
+local args = {
+    [1] = {
+        [1] = "SellMass"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+	_G.cjchcs = Value
+		cjchcs()		
+	end    
+})
