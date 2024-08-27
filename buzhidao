@@ -1763,37 +1763,33 @@ local Section = Tab:AddSection({
 	Name = "自动功能"
 })
 
+llzdzbyl = false
+
 Tab:AddToggle({
-	Name = "自动锻炼（需手动装备）",
+	Name = "自动哑铃锻炼",
 	Default = false,
 	Callback = function(Value)
-		farming = Value
+		llzdzbyl = Value
 		game:GetService("RunService").Stepped:connect(
 		function()
 			pcall(
 				function()
-					if farming then
-						game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+					if llzdzbyl then
+					local args = {
+    [1] = "rep"
+}
+
+game:GetService("Players").LocalPlayer.muscleEvent:FireServer(unpack(args))
+						if llzdzbyl then
+							game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+								game:GetService("Players").LocalPlayer.Backpack.Weight
+							)
+						end
 					end
 				end
 			)
 		end
 		)
-		spawn(function()
-			while farming do
-				wait()
-				pcall(
-					function()
-						game:GetService("Players").LocalPlayer.muscleEvent:FireServer("rep")
-						c()
-						game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(9e9,9e9,9e9)
-						if not farming then
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(0, 0, 0)
-						end
-					end
-				)
-			end
-		end)
 	end    
 })
 
