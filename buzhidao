@@ -872,9 +872,9 @@ _G.autose = true
 
 function autose()
 	while _G.autose == true do
-		if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame
-wait(.1)
+wait(0.1)
 game.workspace.sellAreaCircles["sellAreaCircle7"].circleInner.CFrame = game.Workspace.Part.CFrame
 end
 	end
@@ -1163,156 +1163,64 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("游戏英文名：","Ninja legend")
 
-_G.cjchcsw = true
-Tab:AddToggle({
-	Name = "自动挥剑",
-	Default = false,
-	Callback = function(Value)
-		if Value then
-       ato.autohj=true
-       while wait() do
-       if ato.autohj==true
-       then
-       
-        if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
-            if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") then 
-                game.Players.LocalPlayer.ninjaEvent:FireServer("swingKatana")
-            else
-                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do 
-                    if v.ClassName == "Tool" and v:FindFirstChild("attackShurikenScript") then 
-                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
-					end
-                        if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then 
-                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)                            
-                        end
-                end
-            end
-        end
-        
-            
-        end
-       end
-    else
-        ato.autohj=false
-    end
-	end    
+Tab:AddButton({
+	Name = "自动满元素",
+	Callback = function()
+     local args = {
+    [1] = "Inferno"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Frost"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Electral Chaos"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Lightning"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Shadow Charge"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Masterful Wrath"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Eternity Storm"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Shadowfire"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args))
+
+local args = {
+    [1] = "Blazing Entity"
+}
+
+game:GetService("ReplicatedStorage").rEvents.elementMasteryEvent:FireServer(unpack(args)) 		
+  	end    
 })
-
-Tab:AddToggle({
-	Name = "自动出售",
-	Default = false,
-	Callback = function(Value)
-		_G.autose = Value
-		autose()
-	end    
-})
-
-Tab:AddToggle({
-	Name = "自动买剑",
-	Default = false,
-	Callback = function(Value)
-	if Value then
-        ato.automj=true
-        while  wait(0.5) do 
-            if ato.automj==true then
-                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
-					local oh1 = "buyAllSwords"
-					local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
-					for i = 1,#oh2 do
-						game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
-					end
-				end   
-        end
-        
-            
-        end
-    else
-        ato.automj=false
-    end
-    end
-})
-
-Tab:AddToggle({
-	Name = "自动买腰带",
-	Default = false,
-	Callback = function(Value)
-	if Value then
-        ato.fastbb=true
-        while task.wait() do
-            if ato.fastbb==true then
-                if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
-					local oh1 = "buyAllBelts"
-					local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
-					for i = 1,#oh2 do
-						game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
-					end
-				end
-            end
-        end
-    else
-     ato.fastbb=false
-    end
-	end    
-})
-
-Tab:AddToggle({
-	Name = "自动买阶级",
-	Default = false,
-	Callback = function(Value)
-	if Value then
-      ato.autobr=true
-      while wait(0.5) do
-        if ato.autobr==true then
-            
-        
-        if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
-            local oh1 = "buyRank"
-            local oh2 = game:GetService("ReplicatedStorage").Ranks.Ground:GetChildren()
-            for i = 1,#oh2 do
-            game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i].Name)
-            end
-        end
-    end
-      end
-    else
-      ato.autobr=false
-    end
-	end    
-})Tab:AddToggle({
-	Name = "自动买技能",
-	Default = false,
-	Callback = function(Value)
-    if Value then
-     ato.autobsk=true
-     while wait(0.5) do
-        
-        if ato.autobsk==true then
-            if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
-                local oh1 = "buyAllSkills"
-                local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
-                for i = 1,#oh2 do
-                game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
-                end
-                end
-                end
-        
-     end
-    else
-        ato.autobsk=false
-    end		
-	end    
-})
-
-Tab:AddToggle({
-	Name = "自动吸气",
-	Default = false,
-	Callback = function(Value)
-		_G.chi = Value
-		chi()
-	end    
-})
-
-
 
 Tab:AddButton({
 	Name = "最大跳跃次数",
@@ -1339,6 +1247,237 @@ Tab:AddButton({
       		loadstring(game:HttpGet(('https://raw.githubusercontent.com/atoyayaya/ui/main/ninjashoujiallchest')))()
   	end    
 })
+
+local Section = Tab:AddSection({
+	Name = "自动功能"
+})
+
+rzzdhj = false
+
+Tab:AddToggle({
+	Name = "自动挥剑",
+	Default = false,
+	Callback = function(Value)
+		rzzdhj = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if rzzdhj then
+					local args = {
+    [1] = "swingKatana"
+}
+
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(unpack(args))
+						if rzzdhj then
+						for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do 
+                    if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then 
+                        game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+					end
+                        if v.ClassName == "Tool" and v:FindFirstChild("attackKatanaScript") then 
+                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)                            
+                        end
+                end
+						end
+					end
+				end
+			)
+		end
+		)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+		_G.autose = Value
+		autose()
+	end    
+})
+
+_G.rzzdmj = true
+
+function rzzdmj()
+	while _G.rzzdmj == true do
+	wait(0.5)
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+local oh1 = "buyAllSwords"
+local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+for i = 1,#oh2 do
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买剑",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdmj = Value
+		    rzzdmj()
+	end    
+})
+
+_G.rzzdmbe = true
+
+function rzzdmbe()
+	while _G.rzzdmbe == true do
+	wait()
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+local oh1 = "buyAllBelts"
+local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+for i = 1,#oh2 do
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买腰带",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdmbe = Value
+		    rzzdmbe()
+	end    
+})
+
+_G.rzzdmjj = true
+
+function rzzdmjj()
+	while _G.rzzdmjj == true do
+	wait()
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+local oh1 = "buyRank"
+local oh2 = game:GetService("ReplicatedStorage").Ranks.Ground:GetChildren()
+for i = 1,#oh2 do
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i].Name)
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买阶级",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdmjj = Value
+		    rzzdmjj()
+	end    
+})
+
+_G.rzzdmjn = true
+
+function rzzdmjn()
+	while _G.rzzdmjn == true do
+	wait()
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+local oh1 = "buyAllSkills"
+local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+for i = 1,#oh2 do
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买技能",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdmjn = Value
+		    rzzdmjn()
+	end    
+})
+
+_G.rzzdmslj = true
+
+function rzzdmslj()
+	while _G.rzzdmslj == true do
+	wait()
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+local oh1 = "buyAllShurikens"
+local oh2 = {"Ground", "Astral Island", "Space Island","Tundra Island", "Eternal Island", "Sandstorm", "Thunderstorm", "Ancient Inferno Island", "Midnight Shadow Island", "Mythical Souls Island", "Winter Wonder Island"}
+for i = 1,#oh2 do
+game:GetService("Players").LocalPlayer.ninjaEvent:FireServer(oh1, oh2[i])
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动买手里剑",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdmslj = Value
+		    rzzdmslj()
+	end    
+})
+
+Tab:AddToggle({
+	Name = "自动吸气",
+	Default = false,
+	Callback = function(Value)
+		_G.chi = Value
+		chi()
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "宠物功能"
+})
+
+_G.rzzdjhcw = true
+
+function rzzdjhcw()
+	while _G.rzzdjhcw == true do
+	wait()
+if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+for i,v in pairs(game:GetService("Players").LocalPlayer.petsFolder:GetChildren()) do
+for i,x in pairs(v:GetChildren()) do
+local oh1 = "evolvePet"
+local oh2 = x.Name
+game:GetService("ReplicatedStorage").rEvents.petEvolveEvent:FireServer(oh1, oh2)
+end
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动进化宠物",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdjhcw = Value
+		    rzzdjhcw()
+	end    
+})
+
+_G.rzzdsjcw = true
+
+function rzzdsjcw()
+	while _G.rzzdsjcw == true do
+	wait()
+local plr = game.Players.LocalPlayer
+for _,v in pairs(workspace.Hoops:GetDescendants()) do
+if v.ClassName == "MeshPart" then
+v.touchPart.CFrame = plr.Character.HumanoidRootPart.CFrame
+end
+end
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级宠物",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzdsjcw = Value
+		    rzzdsjcw()
+	end    
+})
+
 
 local Tab = Window:MakeTab({
 	Name = "极速传奇",
