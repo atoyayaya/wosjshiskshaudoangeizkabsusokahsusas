@@ -4719,12 +4719,17 @@ _G.sjzsjz = true
 function sjzsjz()
 	while _G.sjzsjz == true do
 	wait()
+local args = {
+    [1] = "OnJafar"
+}
+
+game:GetService("Players").LocalPlayer.Character.Anchor.GetMuscle.GetMuscle:FireServer(unpack(args))
 
 	end
 end
 
 Tab:AddToggle({
-	Name = "自动举重（需手动装备重量）",
+	Name = "自动举重（无间隔，需手动装备重量）",
 	Default = false,
 	Callback = function(Value)
 		_G.sjzsjz = Value
