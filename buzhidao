@@ -4704,3 +4704,52 @@ Tab:AddToggle({
 		cjchcs()		
 	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "升降战士",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("游戏英文名","Lifting Warriors")
+
+_G.sjzsjz = true
+
+function sjzsjz()
+	while _G.sjzsjz == true do
+	wait()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动举重（需手动装备重量）",
+	Default = false,
+	Callback = function(Value)
+		_G.sjzsjz = Value
+		    sjzsjz()
+	end    
+})
+
+_G.zdsjcs = true
+
+function zdsjcs()
+	while _G.zdsjcs == true do
+	wait()
+local args = {
+    [1] = "LoadAntiCheat"
+}
+
+game:GetService("ReplicatedStorage").Sell:FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动出售",
+	Default = false,
+	Callback = function(Value)
+		_G.zdsjcs = Value
+		    zdsjcs()
+	end    
+})
