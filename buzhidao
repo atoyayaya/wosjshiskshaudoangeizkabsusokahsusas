@@ -916,7 +916,7 @@ Tab:AddButton({
   	end    
 })
 
-Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器，健身房大亨，超级食肉者模拟器")
+Tab:AddParagraph("目前支持游戏","力量传奇，极速传奇，忍者传奇，超级大力士模拟器，举重模拟器，举重传说模拟器，健身联盟\n吃掉世界，跳跃模拟器，速度模拟器，动物进化模拟器，超级力量格斗模拟器，蜂群模拟器\n肌肉怪物，升降传奇，宠物牧场模拟器，健身模拟器，健身房大亨，超级食肉者模拟器，升降战士，英雄传说模拟器")
 
 Tab:AddParagraph("游戏功能","如果在roblox搜不到某些游戏的脚本，试试搜索英文名，英文名在每个脚本功能列表都有")
 
@@ -4751,5 +4751,269 @@ Tab:AddToggle({
 	Callback = function(Value)
 		_G.zdsjcs = Value
 		    zdsjcs()
+	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "英雄传说模拟器",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("游戏英文名：","Legend Of Heroes simulator")
+
+Tab:AddParagraph("提示","当前游戏功能仅为半成品，还有很多功能没做")
+
+_G.yxrw = true
+
+function yxrw()
+	while _G.yxrw == true do
+	wait()
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\187\187\229\138\161"):FindFirstChild("\228\184\187\231\186\191\228\187\187\229\138\161"):FindFirstChild("\233\162\134\229\143\150\228\184\187\231\186\191\228\187\187\229\138\161\229\165\150\229\138\177"):FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动领取任务奖励",
+	Default = false,
+	Callback = function(Value)
+	_G.yxrw = Value
+		yxrw()		
+	end    
+})
+
+_G.yxsjtz = true
+
+function yxsjtz()
+	while _G.yxsjtz == true do
+	wait()
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\229\133\179\229\141\161"):FindFirstChild("\228\184\187\231\186\191[C-S]"):FindFirstChild("\230\140\145\230\136\152\228\184\187\231\186\191\229\133\179\229\141\161"):FireServer()
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动挑战主线关卡",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjtz = Value
+		yxsjtz()		
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "自动升级"
+})
+
+_G.yxsjs = true
+
+function yxsjs()
+	while _G.yxsjs == true do
+	wait()
+local args = {
+    [1] = "\230\148\187\229\135\187\229\138\155"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级攻击力",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjs = Value
+		yxsjs()		
+	end    
+})
+
+_G.yxsjm = true
+
+function yxsjm()
+	while _G.yxsjm == true do
+	wait()
+local args = {
+    [1] = "\231\148\159\229\145\189\229\128\188"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级生命值",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjm = Value
+		yxsjm()		
+	end    
+})
+
+_G.yxsjmh = true
+
+function yxsjmh()
+	while _G.yxsjmh == true do
+	wait()
+local args = {
+    [1] = "\231\148\159\229\145\189\230\129\162\229\164\141"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级生命恢复",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjmh = Value
+		yxsjmh()		
+	end    
+})
+
+_G.yxsjb = true
+
+function yxsjb()
+	while _G.yxsjb == true do
+	wait()
+local args = {
+    [1] = "\230\154\180\229\135\187\230\166\130\231\142\135"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级暴击率",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjb = Value
+		yxsjb()		
+	end    
+})
+
+_G.yxsjbs = true
+
+function yxsjbs()
+	while _G.yxsjbs == true do
+	wait()
+local args = {
+    [1] = "\230\154\180\229\135\187\228\188\164\229\174\179"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级暴击伤害",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjbs = Value
+		yxsjbs()		
+	end    
+})
+
+_G.yxsjgs = true
+
+function yxsjgs()
+	while _G.yxsjgs == true do
+	wait()
+local args = {
+    [1] = "\230\148\187\229\135\187\233\128\159\229\186\166"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\229\159\186\231\161\128\229\177\158\230\128\167"):FindFirstChild("\229\141\135\231\186\167\229\159\186\231\161\128\229\177\158\230\128\167"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级攻击速度",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjgs = Value
+		yxsjgs()		
+	end    
+})
+
+local Section = Tab:AddSection({
+	Name = "开箱功能"
+})
+
+_G.yxsjcw = true
+
+function yxsjcw()
+	while _G.yxsjcw == true do
+	wait()
+local args = {
+    [1] = "\232\163\133\229\164\135",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\229\149\134\229\186\151"):FindFirstChild("\230\138\189\229\143\150\231\137\169\229\147\129"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动十连抽装备",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjcw = Value
+		yxsjcw()		
+	end    
+})
+
+_G.yxsjsjw = true
+
+function yxsjsjw()
+	while _G.yxsjsjw == true do
+	wait()
+local args = {
+    [1] = "\230\173\166\229\153\168"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\232\163\133\229\164\135"):FindFirstChild("\229\141\135\231\186\167\229\133\168\233\131\168\232\163\133\229\164\135"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级全部剑",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjsjw = Value
+		yxsjsjw()		
+	end    
+})
+
+_G.yxsjsjh = true
+
+function yxsjsjh()
+	while _G.yxsjsjh == true do
+	wait()
+local args = {
+    [1] = "\232\161\163\230\156\141"
+}
+
+game:GetService("ReplicatedStorage"):FindFirstChild("\228\186\139\228\187\182"):FindFirstChild("\229\133\172\231\148\168"):FindFirstChild("\228\184\187\232\167\146"):FindFirstChild("\232\163\133\229\164\135"):FindFirstChild("\229\141\135\231\186\167\229\133\168\233\131\168\232\163\133\229\164\135"):FireServer(unpack(args))
+
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动升级全部护甲",
+	Default = false,
+	Callback = function(Value)
+	_G.yxsjsjh = Value
+		yxsjsjh()		
 	end    
 })
