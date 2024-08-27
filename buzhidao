@@ -881,6 +881,14 @@ end
 end
 
 local Tab = Window:MakeTab({
+	Name = "8.27更新日志",
+	Icon = "rbxassetid://7733960981",
+	PremiumOnly = false
+})
+
+Tab:AddParagraph("更新日志8.27","新增游戏内查看时间及FPS\n力量传奇更新修改数据功能\n新增新游戏脚本：英雄传说模拟器和升降战士")
+
+local Tab = Window:MakeTab({
 	Name = "销毁ui",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
@@ -893,13 +901,6 @@ Tab:AddButton({
   	end    
 })
 
-local Tab = Window:MakeTab({
-	Name = "8.27更新日志",
-	Icon = "rbxassetid://7733960981",
-	PremiumOnly = false
-})
-
-Tab:AddParagraph("更新日志8.27","新增游戏内查看时间及FPS\n力量传奇更新修改数据功能\n新增新游戏脚本：英雄传说模拟器和升降战士")
 
 local Tab = Window:MakeTab({
 	Name = "公告",
