@@ -3415,22 +3415,29 @@ local Tab = Window:MakeTab({
 
 Tab:AddParagraph("游戏英文名：","Lifting Legend")
 
-_G.sjyl = true
-
-function sjyl()
-	while _G.sjyl == true do
-	wait()
-game:GetService("ReplicatedStorage").Events.Weight:FireServer()
-
-	end
-end
+sjzdzb = false
 
 Tab:AddToggle({
-	Name = "自动哑铃锻炼（需装备哑铃）",
+	Name = "自动哑铃锻炼",
 	Default = false,
 	Callback = function(Value)
-	_G.sjyl = Value
-		sjyl()		
+		sjzdzb = Value
+		game:GetService("RunService").Stepped:connect(
+		function()
+			pcall(
+				function()
+					if sjzdzb then
+					game:GetService("ReplicatedStorage").Events.Weight:FireServer()
+						if sjzdzb then
+							game.Players.LocalPlayer.Character.Humanoid:EquipTool(
+								game:GetService("Players").LocalPlayer.Backpack.Weight
+							)
+						end
+					end
+				end
+			)
+		end
+		)
 	end    
 })
 
@@ -3445,7 +3452,7 @@ game:GetService("ReplicatedStorage").Events.Golden:FireServer()
 end
 
 Tab:AddToggle({
-	Name = "自动黄金哑铃锻炼（需装备黄金哑铃）",
+	Name = "自动黄金哑铃锻炼（需拥有黄金哑铃）",
 	Default = false,
 	Callback = function(Value)
 	_G.sjhjyl = Value
