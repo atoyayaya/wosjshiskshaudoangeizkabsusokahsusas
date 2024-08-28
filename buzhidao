@@ -881,12 +881,12 @@ end
 end
 
 local Tab = Window:MakeTab({
-	Name = "8.27更新日志",
+	Name = "8.28更新日志",
 	Icon = "rbxassetid://7733960981",
 	PremiumOnly = false
 })
 
-Tab:AddParagraph("更新日志8.27","新增游戏内查看时间及FPS\n力量传奇更新修改数据功能\n新增新游戏脚本：英雄传说模拟器和升降战士")
+Tab:AddParagraph("更新日志8.28","新增忍者传奇35倍出售以及修复忍者传奇功能无法使用bug")
 
 local Tab = Window:MakeTab({
 	Name = "销毁ui",
@@ -1293,6 +1293,24 @@ Tab:AddToggle({
 	Callback = function(Value)
 		_G.autose = Value
 		autose()
+	end    
+})
+
+_G.rzzd35cs = true
+
+function rzzd35cs()
+	while _G.rzzd35cs == true do
+	wait(0.5)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(80.84947204589844, 91252.8125, 123.96548461914062)
+	end
+end
+
+Tab:AddToggle({
+	Name = "自动35倍出售",
+	Default = false,
+	Callback = function(Value)
+		_G.rzzd35cs = Value
+		    rzzd35cs()
 	end    
 })
 
