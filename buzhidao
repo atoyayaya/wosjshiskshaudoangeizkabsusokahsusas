@@ -918,6 +918,15 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Tab:AddParagraph("当前游戏的ID",""..game.GameId.."")
+
+Tab:AddButton({
+	Name = "复制游戏ID",
+	Callback = function()
+setclipboard(""..game.GameId.."")
+  	end    
+})
+
 local Section = Tab:AddSection({
 	Name = "扣字"
 })
